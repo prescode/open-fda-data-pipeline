@@ -7,10 +7,10 @@ from botocore.client import ClientError
 
 S3_BUCKET = os.environ['s3_target_bucket']
 START_YEAR = os.environ['start_year']
-SITE = os.environ['site']
 
 def write_url_file_to_s3(file_name, bucket, object_name = None):
     # If S3 object_name was not specified, use file_name
+    print(type(file_name))
     if object_name is None:
         object_name = file_name
     # Upload the file
@@ -84,6 +84,19 @@ def search_url(start_year, end_year = date.today().year):
                 #assume we tried all filenumber of files so we have reached the end
                 complete = True
                 print("Stopping search after " + str(ofSearchLimit) + "iterations")
+
+def test_url_search(start_year):
+    for next_url in search_url(start_year):
+        print(next_url)
+
+def test_lambda_handler(s3_bucket, start_year):
+    i = 0
+    for url in search_url(start_year):
+        i += 1
+        file_name = "url_" + str(i) + ".json"
+        with open(file_name, 'w') as outfile:
+            json.dump({'url:': url}, outfile)
+            write_url_file_to_s3(outfile.name, s3_bucket)
 
 def lambda_handler(event, context):
     gen = search_url(START_YEAR)
