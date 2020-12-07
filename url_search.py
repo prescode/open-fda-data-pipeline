@@ -3,20 +3,34 @@ import os
 from datetime import date, timedelta
 import urllib
 import boto3
+from botocore.client import ClientError
 
+S3_BUCKET = os.environ['s3_target_bucket']
 START_YEAR = os.environ['start_year']
 SITE = os.environ['site']
 
-def search_url(startYear, endYear = date.today().year):
+def write_url_file_to_s3(file_name, bucket, object_name = None):
+    # If S3 object_name was not specified, use file_name
+    if object_name is None:
+        object_name = file_name
+    # Upload the file
+    s3_client = boto3.client('s3')
+    try:
+        s3_client.upload_file(file_name, bucket, object_name)
+    except ClientError as e:
+        print(e)
+        return False
+    return True
+
+def search_url(start_year, end_year = date.today().year):
     base_url = "https://download.open.fda.gov/device/event/"
     #start year must be on or after 1992
-    start_year = date(startYear, 6, 1)
+    start_year = date(start_year, 6, 1)
     print("Start Year: " + str(start_year.year))
-    end_year = date(endYear, 6, 1)
+    end_year = date(end_year, 6, 1)
     print("End Year: " + str(end_year.year))
     ofSearchLimit=10
     complete = False
-    urls = []
     q = 1
     n = 1
     of = 1
@@ -42,7 +56,7 @@ def search_url(startYear, endYear = date.today().year):
                     status_code = 404
                 valid_url = status_code == 200
                 if(valid_url):
-                    urls.append(request_url)
+                    yield request_url
                 else:
                     #bad bad bad
                     pass
@@ -63,18 +77,14 @@ def search_url(startYear, endYear = date.today().year):
             of = 1
             continue
         else:
-            #assumption: there will never be more than 9 files
+            #assumption: there will never be more than 9 files per year
             if(of < ofSearchLimit):
                 of += 1
             else:
                 #assume we tried all filenumber of files so we have reached the end
                 complete = True
                 print("Stopping search after " + str(ofSearchLimit) + "iterations")
-    return urls
 
 def lambda_handler(event, context):
-    search_url(START_YEAR)
-    return {
-        'statusCode': 200,
-        'body': json.dumps('Hello from Lambda!')
-    }
+    gen = search_url(START_YEAR)
+    write_url_file_to_s3(next(gen), S3_BUCKET)
