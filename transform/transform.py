@@ -9,7 +9,7 @@ S3_TARGET_BUCKET = os.environ['S3_TARGET_BUCKET']
 #set environ variable for testing
 #S3_TARGET_BUCKET = 'fda-data-clean'
 
-main_fields=['product_problem_flag', 'date_of_event', 'source_type', 'event_location', 'type_of_report', 'device', 'product_problems', 'adverse_event_flag', 'mdr_text']
+main_fields=['product_problem_flag', 'date_received', 'source_type', 'event_location', 'type_of_report', 'device', 'product_problems', 'adverse_event_flag', 'mdr_text']
 device_fields=['manufacturer_d_zip_code','lot_number', 'model_number', 'generic_name', 'device_operator', 'manufacturer_d_name', 'catalog_number', 'device_name', 'medical_specialty_description', 'device_class', 'regulation_number']
 openfda_device_fields=['medical_specialty_description', 'device_class', 'regulation_number']
 
@@ -38,12 +38,14 @@ def lambda_handler(event, context):
         #extract results (remove metadata header)
         results = data['results']
         #take first 10 results for testing
-        sample_records = results[:10]
+        sample_records = results[:100]
+        with open("sample_records.json", "w") as write_file:
+            json.dump(sample_records, write_file, separators=(',', ':'))
         transformed_data = map(filter_fields, sample_records)
         list_transformed_data = list(transformed_data)
         #zip transformed data
-        print(json.dumps(list_transformed_data, indent=1, sort_keys=True, separators=(',',': ')))
-        break
+        with open("sample_transformed_records.json", "w") as write_file:
+            json.dump(list_transformed_data, write_file, separators=(',', ':'))
         #write to s3
         #re-use the key from the read file for the destination file
         with open(key, 'w') as write_file:
