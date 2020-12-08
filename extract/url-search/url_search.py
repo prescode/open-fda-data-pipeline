@@ -93,18 +93,3 @@ def lambda_handler(event, context):
         with open(file_name, 'w') as outfile:
             json.dump({'url': url}, outfile)
         write_file_to_s3(outfile.name, S3_BUCKET)
-
-#tests
-def test_url_search(start_year):
-    for next_url in search_url(start_year):
-        print(next_url)
-
-def test_lambda_handler(s3_bucket, start_year):
-    i = 0
-    for url in search_url(start_year):
-        print('url: ' + url)
-        i += 1
-        file_name = "url_" + str(i) + ".json"
-        with open(file_name, 'w') as outfile:
-            json.dump({'url': url}, outfile)
-        write_file_to_s3(outfile.name, s3_bucket)
