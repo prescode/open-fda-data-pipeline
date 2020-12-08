@@ -35,6 +35,6 @@ def lambda_handler(event, context):
         file_name =  url.split('/')[-1]
         if not os.path.exists(year):
             os.makedirs(year)
-        new_file_name = year + "/" + file_name
-        urllib.request.urlretrieve(url, new_file_name)
-        write_file_to_s3(new_file_name, S3_TARGET_BUCKET)
+        new_file_path = year + "/" + file_name
+        urllib.request.urlretrieve(url, new_file_path)
+        write_file_to_s3(new_file_path, S3_TARGET_BUCKET)
