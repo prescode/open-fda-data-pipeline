@@ -5,10 +5,10 @@ import urllib
 import boto3
 from botocore.client import ClientError
 
-S3_BUCKET = os.environ['s3_target_bucket']
+S3_BUCKET = os.environ['fda-data-extract-urls']
 START_YEAR = os.environ['start_year']
 
-def write_url_file_to_s3(file_name, bucket, object_name = None):
+def write_file_to_s3(file_name, bucket, object_name = None):
     # If S3 object_name was not specified, use file_name
     print(type(file_name))
     if object_name is None:
@@ -96,8 +96,8 @@ def test_lambda_handler(s3_bucket, start_year):
         file_name = "url_" + str(i) + ".json"
         with open(file_name, 'w') as outfile:
             json.dump({'url:': url}, outfile)
-            write_url_file_to_s3(outfile.name, s3_bucket)
+            write_file_to_s3(outfile.name, s3_bucket)
 
 def lambda_handler(event, context):
     gen = search_url(START_YEAR)
-    write_url_file_to_s3(next(gen), S3_BUCKET)
+    write_file_to_s3(next(gen), S3_BUCKET)
