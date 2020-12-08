@@ -18,25 +18,32 @@ def lambda_handler(event, context):
         bucket_name = record['s3']['bucket']['name']
         key = record['s3']['object']['key']
         print('s3 bucket: ' + bucket_name + '_s3 key: ' + key)
-        s3 = boto3.client('s3')
-        response = s3.get_object(Bucket=bucket_name, Key=key)
-        body = response['Body'].read()
-        zip_file = json.loads(body)
-        year = key.split('/')[-2][:-2]
+        year = key.split('/')[-2]
         file_name = key.split('/')[-1]
+        zip_file_path = year + "/" + file_name
+        #remove .zip for the new filename
+        extracted_file_path = os.path.splitext(zip_file_path)[0]
         if not os.path.exists(year):
             os.makedirs(year)
+        s3 = boto3.resource('s3')
+        s3.Bucket(bucket_name).download_file(key, zip_file_path)
         #extract zip file
-        with zipfile.ZipFile(zip_file, 'r') as zip_ref:
+        with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
             zip_ref.extractall(year)
-        #load file
-        with open(file_name, 'r') as read_file:
+        os.remove(zip_file_path)
+        #open file and load json
+        with open(extracted_file_path, 'r') as read_file:
             data = json.load(read_file)
         #transform data
-        transformed_data = map(filter_fields, data)
+        #extract results (remove metadata header)
+        results = data['results']
+        #take first 10 results for testing
+        sample_records = results[:10]
+        transformed_data = map(filter_fields, sample_records)
         list_transformed_data = list(transformed_data)
         #zip transformed data
-
+        print(json.dumps(list_transformed_data, indent=1, sort_keys=True, separators=(',',': ')))
+        break
         #write to s3
         #re-use the key from the read file for the destination file
         with open(key, 'w') as write_file:
