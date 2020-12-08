@@ -1,0 +1,2432 @@
+{
+    "meta": {
+      "disclaimer": "Do not rely on openFDA to make decisions regarding medical care. While we make every effort to ensure that data is accurate, you should assume all results are unvalidated. We may limit or otherwise restrict your access to the API in line with our Terms of Service.",
+      "terms": "https://open.fda.gov/terms/",
+      "license": "https://open.fda.gov/license/",
+      "last_updated": "2020-11-01",
+      "results": {
+        "skip": 0,
+        "limit": 15,
+        "total": 371656
+      }
+    },
+    "results": [
+      {
+        "manufacturer_contact_zip_ext": "-386",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "*",
+        "manufacturer_contact_t_name": "",
+        "manufacturer_contact_state": "",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "JUNCOS",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Malfunction",
+        "manufacturer_contact_pcity": "81854648",
+        "manufacturer_contact_address_1": "CEIBA NORTE IND. PARK #50 ROAD",
+        "report_number": "3004209178-2020-76996",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200227",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "",
+        "date_of_event": "20200219",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "00777",
+        "manufacturer_contact_plocal": "8185464805",
+        "reporter_occupation_code": "OTHER",
+        "manufacturer_contact_l_name": "DE GRAAFF",
+        "source_type": [
+          "COMPANY REPRESENTATIVE",
+          "FOREIG"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "00777-3869",
+        "manufacturer_g1_state": "",
+        "reporter_country_code": "IT",
+        "manufacturer_contact_area_code": "818",
+        "date_added": "20200227",
+        "manufacturer_contact_f_name": "GERWIN",
+        "device_date_of_manufacturer": "20180622",
+        "previous_use_code": "U",
+        "device": [
+          {
+            "manufacturer_d_address_1": "CEIBA NORTE IND. PARK #50 ROAD",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "",
+            "manufacturer_d_zip_code": "00777",
+            "manufacturer_d_city": "JUNCOS",
+            "lot_number": "A000555167",
+            "manufacturer_d_postal_code": "00777-3869",
+            "manufacturer_d_zip_code_ext": "-386",
+            "model_number": "MMT-1781K",
+            "date_received": "20200227",
+            "device_report_product_code": "OZP",
+            "device_operator": "LAY USER/PATIENT",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "ARTIFICIAL PANCREAS DEVICE SYSTEM, SINGLE HORMONAL CONTROL",
+            "manufacturer_d_name": "MEDTRONIC PUERTO RICO OPERATIONS CO.",
+            "manufacturer_d_country": "*",
+            "combination_product_flag": "N",
+            "brand_name": "PUMP MMT-1781K 670G V4.11 MG",
+            "openfda": {
+              "device_name": "Automated Insulin Dosing Device System, Single Hormonal Control",
+              "medical_specialty_description": "Unknown",
+              "device_class": "3",
+              "regulation_number": ""
+            },
+            "device_age_text": "",
+            "device_evaluated_by_manufacturer": "*",
+            "catalog_number": "MMT-1781K",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Patient Device Interaction Problem"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "*",
+        "date_changed": "20200227",
+        "health_professional": "I",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "-386",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "8185",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200227",
+            "sequence_number_outcome": [
+              ""
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200227",
+        "initial_report_to_fda": "No",
+        "manufacturer_g1_country": "*",
+        "event_key": "",
+        "manufacturer_contact_city": "JUNCOS",
+        "mdr_report_key": "9762176",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200219",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "00777",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "MEDTRONIC PUERTO RICO OPERATIONS CO.",
+        "distributor_address_1": "",
+        "adverse_event_flag": "N",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "N",
+        "mdr_text": [
+          {
+            "mdr_text_key": "182708809",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "CURRENTLY IT IS UNKNOWN WHETHER OR NOT THE DEVICE MAY HAVE CAUSED OR CONTRIBUTED TO THE EVENT AS NO PRODUCT HAS BEEN RETURNED. NO CONCLUSION CAN BE DRAWN AT THIS TIME. WE THEREFORE CONSIDER THIS REPORT COMPLETE TO THE BEST OF OUR KNOWLEDGE. (B)(4)."
+          },
+          {
+            "mdr_text_key": "182708810",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "INFORMATION RECEIVED BY MEDTRONIC INDICATED THAT THE PLASTIC RING WAS DETACHED FROM THE RESERVOIR COMPARTMENT. NO HARM REQUIRING MEDICAL INTERVENTION WAS REPORTED. THE INSULIN PUMP WILL NOT BE RETURNED FOR ANALYSIS."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "CEIBA NORTE IND. PARK #50 ROAD",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "818",
+        "manufacturer_contact_postal_code": "00777-3869",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "*",
+        "manufacturer_contact_t_name": "MR.",
+        "manufacturer_contact_state": "TX",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "HOUSTON",
+        "manufacturer_contact_address_2": "MAIL STOP AB2-6",
+        "event_type": "Malfunction",
+        "manufacturer_contact_pcity": "81755149",
+        "manufacturer_contact_address_1": "6201 SOUTH FREEWAY",
+        "report_number": "1644019-2020-00108",
+        "type_of_report": [
+          "Initial submission",
+          "Followup"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200228",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "K880961",
+        "date_of_event": "20200213",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "76134",
+        "manufacturer_contact_plocal": "8175514979",
+        "reporter_occupation_code": "OTHER HEALTH CARE PROFESSIONAL",
+        "manufacturer_contact_l_name": "SCHLECH",
+        "source_type": [
+          "COMPANY REPRESENTATIVE",
+          "FOREIG"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "77054",
+        "manufacturer_g1_state": "TX",
+        "reporter_country_code": "NL",
+        "manufacturer_contact_area_code": "817",
+        "date_added": "20200228",
+        "manufacturer_contact_f_name": "JONATHAN",
+        "previous_use_code": "I",
+        "device": [
+          {
+            "manufacturer_d_address_1": "9965 BUFFALO SPEEDWAY",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "TX",
+            "manufacturer_d_zip_code": "77054",
+            "manufacturer_d_city": "HOUSTON",
+            "lot_number": "ASKU",
+            "manufacturer_d_postal_code": "77054",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "NA",
+            "date_received": "20200228",
+            "device_report_product_code": "LRO",
+            "device_operator": "HEALTH PROFESSIONAL",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "GENERAL SURGERY TRAY (KIT)",
+            "manufacturer_d_name": "ALCON RESEARCH, LLC - HOUSTON",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "CONSTELLATION SURGICAL PROCEDURE PAK",
+            "openfda": {
+              "device_name": "General Surgery Tray",
+              "medical_specialty_description": "General, Plastic Surgery",
+              "device_class": "2",
+              "regulation_number": "878.4370"
+            },
+            "device_age_text": "DA",
+            "device_evaluated_by_manufacturer": "R",
+            "catalog_number": "ASKU",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Detachment of Device or Device Component"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200605",
+        "health_professional": "Y",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "8175",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200228",
+            "sequence_number_outcome": [
+              ""
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200605",
+        "initial_report_to_fda": "No answer provided",
+        "manufacturer_g1_country": "US",
+        "event_key": "",
+        "manufacturer_contact_city": "FORT WORTH",
+        "mdr_report_key": "9769739",
+        "removal_correction_number": "NA",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200519",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "77054",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "ALCON RESEARCH, LLC - HOUSTON",
+        "distributor_address_1": "",
+        "adverse_event_flag": "N",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "Y",
+        "mdr_text": [
+          {
+            "mdr_text_key": "184642659",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "INVESTIGATION, INCLUDING ROOT CAUSE ANALYSIS, IS IN PROGRESS. A SUPPLEMENTAL MDR WILL BE FILED AS NECESSARY IN ACCORDANCE WITH 21 CFR 803.56 WHEN ADDITIONAL REPORTABLE INFORMATION BECOMES AVAILABLE. THE MANUFACTURER INTERNAL REFERENCE NUMBER IS: (B)(4)."
+          },
+          {
+            "mdr_text_key": "184642660",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "A HEALTHCARE PROFESSIONAL REPORTED THAT THE BLUE RING FROM THE TROCAR CAME OFF WHEN WITHDRAWING THE CHANDELIER DURING A VITRECTOMY PROCEDURE. THE PROCEDURE WAS COMPLETED WITHOUT CONSEQUENCES FOR THE PATIENT."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "9965 BUFFALO SPEEDWAY",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "817",
+        "manufacturer_contact_postal_code": "76134",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "NASACO TECH CENTRE",
+        "event_location": "I",
+        "report_to_fda": "*",
+        "manufacturer_contact_t_name": "",
+        "manufacturer_contact_state": "MN",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "SINGAPORE",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Injury",
+        "manufacturer_contact_pcity": "76350553",
+        "manufacturer_contact_address_1": "8200 CORAL SEA ST NE",
+        "report_number": "3008973940-2020-00229",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200124",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "P920015",
+        "date_of_event": "20190501",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "55112",
+        "manufacturer_contact_plocal": "7635055378",
+        "reporter_occupation_code": "PHYSICIAN",
+        "manufacturer_contact_l_name": "BIXBY",
+        "source_type": [
+          "COMPANY REPRESENTATIVE",
+          "FOREIG"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "486056",
+        "manufacturer_g1_state": "",
+        "reporter_country_code": "PL",
+        "manufacturer_contact_area_code": "763",
+        "date_added": "20200124",
+        "manufacturer_contact_f_name": "PAULA",
+        "device_date_of_manufacturer": "20180312",
+        "previous_use_code": "I",
+        "device": [
+          {
+            "manufacturer_d_address_1": "49 CHANGI SOUTH AVENUE 2",
+            "manufacturer_d_address_2": "NASACO TECH CENTRE",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "",
+            "manufacturer_d_zip_code": "48605",
+            "manufacturer_d_city": "SINGAPORE",
+            "lot_number": "",
+            "manufacturer_d_postal_code": "486056",
+            "manufacturer_d_zip_code_ext": "6",
+            "model_number": "6935M62",
+            "date_received": "20200124",
+            "device_report_product_code": "LWS",
+            "device_operator": "LAY USER/PATIENT",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "DEFIBRILLATOR, AUTOMATIC IMPLANTABLE CARDIOVERTER",
+            "manufacturer_d_name": "MEDTRONIC SINGAPORE OPERATIONS",
+            "manufacturer_d_country": "SG",
+            "combination_product_flag": "N",
+            "brand_name": "SPRINT QUATTRO SECURE S MRI SURESCAN",
+            "openfda": {
+              "device_name": "Implantable Cardioverter Defibrillator (Non-Crt)",
+              "medical_specialty_description": "Unknown",
+              "device_class": "3",
+              "regulation_number": ""
+            },
+            "expiration_date_of_device": "20200226",
+            "device_age_text": "",
+            "device_evaluated_by_manufacturer": "Y",
+            "catalog_number": "6935M62",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Low impedance"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200211",
+        "health_professional": "Y",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "6",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "7635",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              "DTMC2QQ CRTD"
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200124",
+            "sequence_number_outcome": [
+              "1. H",
+              " 2. R"
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200124",
+        "initial_report_to_fda": "No answer provided",
+        "manufacturer_g1_country": "SG",
+        "event_key": "",
+        "manufacturer_contact_city": "MOUNDS VIEW",
+        "mdr_report_key": "9628481",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200114",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "48605",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "MEDTRONIC SINGAPORE OPERATIONS",
+        "distributor_address_1": "",
+        "adverse_event_flag": "Y",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "Y",
+        "mdr_text": [
+          {
+            "mdr_text_key": "176281773",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "PRODUCT EVENT SUMMARY: THE LEAD WAS NOT RETURNED FOR ANALYSIS, HOWEVER, PERFORMANCE DATA COLLECTED FROM THE DEVICE WAS RECEIVED AND ANALYZED. ANALYSIS OF THE DEVICE MEMORY INDICATED THE IMPEDANCE OF THE RIGHT VENTRICULAR PACING LEAD WAS BELOW THE EXPECTED LOWER RANGE. CONCOMITANT MEDICAL PRODUCTS: 429888 LEAD; UNKNOWN ATRIAL LEAD, IMPLANTED: (B)(6) 2018. IF INFORMATION IS PROVIDED IN THE FUTURE, A SUPPLEMENTAL REPORT WILL BE ISSUED."
+          },
+          {
+            "mdr_text_key": "176281794",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED THAT THE CARDIAC RESYNCHRONIZATION THERAPY DEFIBRILLATOR (CRT-D) EXHIBITED A SUDDEN DROP IN IMPEDANCE ON THE RIGHT VENTRICULAR (RV) AND LEFT VENTRICULAR (LV) VECTORS. THE EXPLANTING PHYSICIAN CHECKED THE LEADS THROUGH THE ANALYZER REVEALING IMPEDANCE MEASURED AT VALUES COMPARABLE TO THOSE RECORDED BEFORE THE SUDDEN DROP IN VALUE. REGARDLESS OF THE CORRECT VALUES, THE DEVICE, RV LEAD, AND LV LEAD WERE EXPLANTED AND REPLACED. NO PATIENT COMPLICATIONS HAVE BEEN REPORTED AS A RESULT OF THIS EVENT."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "49 CHANGI SOUTH AVENUE 2",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "763",
+        "manufacturer_contact_postal_code": "55112",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "*",
+        "manufacturer_contact_t_name": "",
+        "manufacturer_contact_state": "MN",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "DORADO",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Injury",
+        "manufacturer_contact_pcity": "65158261",
+        "manufacturer_contact_address_1": "4100 HAMLINE AVENUE NORTH",
+        "report_number": "2124215-2020-01167",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "N",
+        "date_received": "20200125",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "P110042/S077",
+        "date_of_event": "20191216",
+        "reprocessed_and_reused_flag": "I",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "55112",
+        "manufacturer_contact_plocal": "6515826168",
+        "reporter_occupation_code": "PHYSICIAN",
+        "manufacturer_contact_l_name": "DEGROOT",
+        "source_type": [
+          "HEALTH PROFESSIONAL"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "006462602",
+        "manufacturer_g1_state": "PR",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "651",
+        "date_added": "20200125",
+        "manufacturer_contact_f_name": "TIMOTHY",
+        "device_date_of_manufacturer": "20190722",
+        "previous_use_code": "I",
+        "device": [
+          {
+            "manufacturer_d_address_1": "4100 HAMLINE AVENUE NORTH",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "MN",
+            "manufacturer_d_zip_code": "55112",
+            "manufacturer_d_city": "SAINT PAUL",
+            "lot_number": "162431",
+            "manufacturer_d_postal_code": "55112",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "3501",
+            "date_received": "20200125",
+            "device_report_product_code": "LWS",
+            "device_operator": "LAY USER/PATIENT",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "IMPLANTABLE LEAD",
+            "manufacturer_d_name": "BOSTON SCIENTIFIC CORPORATION",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "EMBLEM S-ICD",
+            "openfda": {
+              "device_name": "Implantable Cardioverter Defibrillator (Non-Crt)",
+              "medical_specialty_description": "Unknown",
+              "device_class": "3",
+              "regulation_number": ""
+            },
+            "device_age_text": "",
+            "device_evaluated_by_manufacturer": "R",
+            "catalog_number": "3501",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Adverse Event Without Identified Device or Use Problem"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200211",
+        "health_professional": "Y",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "2602",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "6515",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200125",
+            "sequence_number_outcome": [
+              "1. H",
+              " 2. L",
+              " 3. O",
+              " 4. R"
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200125",
+        "initial_report_to_fda": "No answer provided",
+        "manufacturer_g1_country": "US",
+        "event_key": "",
+        "manufacturer_contact_city": "SAINT PAUL",
+        "mdr_report_key": "9630295",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20191216",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "00646",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "BOSTON SCIENTIFIC CORPORATION",
+        "distributor_address_1": "",
+        "adverse_event_flag": "Y",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "Y",
+        "mdr_text": [
+          {
+            "mdr_text_key": "176368079",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "AS NO FURTHER INFORMATION CONCERNING THIS REPORT IS EXPECTED, OUR INVESTIGATION IS COMPLETE. THIS INVESTIGATION WILL BE UPDATED SHOULD FURTHER INFORMATION BE PROVIDED."
+          },
+          {
+            "mdr_text_key": "176368080",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED THAT THIS PRODUCT WAS PART OF A SYSTEM REVISION DUE TO INFECTION. THERE WERE NO ADDITIONAL ADVERSE EFFECTS REPORTED."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "ROAD 698, LOT NO. 12",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "651",
+        "manufacturer_contact_postal_code": "55112",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "*",
+        "manufacturer_contact_t_name": "",
+        "manufacturer_contact_state": "",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "NAPLES",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Injury",
+        "manufacturer_contact_pcity": "80093370",
+        "manufacturer_contact_address_1": "",
+        "report_number": "1220246-2020-01605",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "N",
+        "date_received": "20200127",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "K043248",
+        "date_of_event": "20191122",
+        "reprocessed_and_reused_flag": "I",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "",
+        "manufacturer_contact_plocal": "8009337001",
+        "reporter_occupation_code": "OTHER",
+        "manufacturer_contact_l_name": "BAJNATH",
+        "source_type": [
+          "CONSUMER"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "341081945",
+        "manufacturer_g1_state": "FL",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "800",
+        "date_added": "20200127",
+        "manufacturer_contact_f_name": "VIK",
+        "device_date_of_manufacturer": "20170221",
+        "previous_use_code": "I",
+        "device": [
+          {
+            "manufacturer_d_address_1": "1370 CREEKSIDE BOULEVARD",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "FL",
+            "manufacturer_d_zip_code": "34108",
+            "manufacturer_d_city": "NAPLES",
+            "lot_number": "17016",
+            "manufacturer_d_postal_code": "341081945",
+            "manufacturer_d_zip_code_ext": "1945",
+            "model_number": "KNOTLESS T-ROPE SYN-DESMOSIS REPR KIT,SS",
+            "date_received": "20200127",
+            "device_report_product_code": "HTN",
+            "device_operator": "HEALTH PROFESSIONAL",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "WASHER, BOLT NUT",
+            "manufacturer_d_name": "ARTHREX, INC.",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "KNOTLESS T-ROPE SYN-DESMOSIS REPR KIT,SS",
+            "openfda": {
+              "device_name": "Washer, Bolt Nut",
+              "medical_specialty_description": "Orthopedic",
+              "device_class": "2",
+              "regulation_number": "888.3030"
+            },
+            "device_age_text": "",
+            "device_evaluated_by_manufacturer": "N",
+            "catalog_number": "AR-8926SS",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Appropriate Term/Code Not Available"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "",
+        "date_changed": "20200605",
+        "health_professional": "I",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "1945",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "71375",
+        "manufacturer_contact_phone_number": "8009",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200127",
+            "sequence_number_outcome": [
+              "1. O"
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200127",
+        "initial_report_to_fda": "No",
+        "manufacturer_g1_country": "US",
+        "event_key": "",
+        "manufacturer_contact_city": "",
+        "mdr_report_key": "9631371",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200108",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "34108",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "ARTHREX, INC.",
+        "distributor_address_1": "",
+        "adverse_event_flag": "Y",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "Y",
+        "mdr_text": [
+          {
+            "mdr_text_key": "189493009",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "THE CONTRIBUTION OF THE DEVICE TO THE REPORTED EVENT COULD NOT BE DETERMINED AS THE DEVICE WAS NOT RETURNED FOR EVALUATION. THE ROOT CAUSE OF THE EVENT COULD NOT BE DETERMINED FROM THE INFORMATION AVAILABLE AND WITHOUT DEVICE EVALUATION."
+          },
+          {
+            "mdr_text_key": "189493010",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED BY THE PATIENT THAT SHE HAD AN ORIGINAL ANKLE PROCEDURE (B)(6) 2017. DURING THE SURGERY SIX ARTHREX PRODUCTS WERE IMPLANTED. THE PATIENT DEVELOPED ALLERGIC LIKE REACTION SYMPTOMS AND RECENTLY HAD TO UNDERGO A SECOND SURGERY ON (B)(6) 2019 TO EXPLANT THE ARTHREX DEVICES. PATIENT DID NOT HAVE AN FURTHER DETAILS AT THE TIME OF REPORT BUT WILL PROVIDE SOON. ADDITIONAL INFORMATION 01/08/2020: ORIGINAL PROCEDURE WAS ON (B)(6) 2017 AND WAS A LEFT ANKLE ORIF. FOLLOWING SURGERY THE PATIENT WAS IN THE HOSPITAL FOR THREE NIGHTS. SHE STARTED HAVING RINGING IN HER EARS AND DIZZINESS 3 MONTHS AFTER SURGERY. THIS WAS FOLLOWED BY TIREDNESS, MIGRAINES, AND TMJ ON HER RIGHT SIDE. SHE ALSO DEVELOPED NOTICEABLY DRIER, FLAKY SKIN AND MORE ANXIETY AFTER ABOUT 6 MONTHS. SHE DEVELOPED FOOD INTOLERANCE TO DAIRY AND DEVELOPED A THYROID NODULE AS WELL. PATIENT HAD A SECOND SURGERY ON (B)(6) 2019 TO EXPLANT ALL OF THE ORIGINAL IMPLANT DEVICES. THE SECOND SURGERY WAS PERFORMED BY A DIFFERENT SURGEON AT A DIFFERENT FACILITY. THE FOLLOWING DEVICES WERE REPORTED TO HAVE BEEN IMPLANTED (B)(6) 2017 AND EXPLANTED (B)(6) 2019 (SPECIFIC ARTHREX PART NUMBERS WERE NOT PROVIDED): AR-8926SS, KNOTLESS TIGHTROPE SYNDESMOSIS REPAIR IMPLANT, LOT 17016, AR-1688-CP, IMPLANT SYSTEM, INTERNAL BRACE LIGAMENT AUGMENTATION REPAIR WITH COLLAGEN COATED FIBERTAPE, LOT 10127689, AR-8943BL-04, LOCKING DITAL FIBULA PLATE, SS, LEFT, 4 HOLE, LOT UNKNOWN, AR-8827L-10, QTY 2, LOW PROFILE LOCKING SCREW, SS, 2.7 X 10MM, AR-8827L-12. LOW PROFILE LOCKING SCREW, SS, 2.7 X 12MM, AR-8835-14, QTY 3, LOW PROFILE NONLOCKING CORTICAL SCREW, SS, 3.5 X 14 MM. PATIENT REPORTS SHE DID NOT KEEP THE IMPLANTS BECAUSE SHE DID NOT WANT THEM. PATIENT ALSO STATED THE TISSUE LOOKED OK BUT THAT IT DOES NOT RULE OUT METALLOSIS."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "1370 CREEKSIDE BOULEVARD",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "800",
+        "manufacturer_contact_postal_code": "",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "NA",
+        "event_location": "I",
+        "report_to_fda": "N",
+        "manufacturer_contact_t_name": "MS.",
+        "manufacturer_contact_state": "CO",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "WESTMINSTER",
+        "manufacturer_contact_address_2": "NA",
+        "event_type": "Injury",
+        "manufacturer_contact_pcity": "30344375",
+        "manufacturer_contact_address_1": "10225 WESTMOOR DR.",
+        "report_number": "3012447612-2020-00025",
+        "type_of_report": [
+          "Initial submission",
+          "Followup"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200130",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "K133556",
+        "date_of_event": "20191227",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "80021",
+        "manufacturer_contact_plocal": "3034437500",
+        "reporter_occupation_code": "PHYSICIAN",
+        "manufacturer_contact_l_name": "MCPHERSON",
+        "source_type": [
+          "DISTRIBUTOR",
+          "HEALTH PROFESSION"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "80021",
+        "manufacturer_g1_state": "CO",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "303",
+        "date_added": "20200130",
+        "manufacturer_contact_f_name": "ASHLEY",
+        "previous_use_code": "I",
+        "device": [
+          {
+            "manufacturer_d_address_1": "10225 WESTMOOR DR.",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "CO",
+            "manufacturer_d_zip_code": "80021",
+            "manufacturer_d_city": "WESTMINSTER",
+            "lot_number": "NI",
+            "manufacturer_d_postal_code": "80021",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "NA",
+            "date_received": "20200130",
+            "device_report_product_code": "KWP",
+            "device_operator": "HEALTH PROFESSIONAL",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "VIRAGE OCT SPINAL FIXATION SYSTEM",
+            "manufacturer_d_name": "ZIMMER BIOMET SPINE INC.",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "STANDARD CLOSURE TOP",
+            "openfda": {
+              "device_name": "Appliance, Fixation, Spinal Interlaminal",
+              "medical_specialty_description": "Orthopedic",
+              "device_class": "2",
+              "regulation_number": "888.3050"
+            },
+            "device_age_text": "DA",
+            "device_evaluated_by_manufacturer": "R",
+            "catalog_number": "07.01728.001",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Migration"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200721",
+        "health_professional": "Y",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "3034",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200130",
+            "sequence_number_outcome": [
+              "1. H",
+              " 2. R"
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200619",
+        "initial_report_to_fda": "No",
+        "manufacturer_g1_country": "US",
+        "event_key": "",
+        "manufacturer_contact_city": "WESTMINSTER",
+        "mdr_report_key": "9647389",
+        "removal_correction_number": "NA",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200615",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "80021",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "ZIMMER BIOMET SPINE INC.",
+        "distributor_address_1": "",
+        "adverse_event_flag": "Y",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "Y",
+        "mdr_text": [
+          {
+            "mdr_text_key": "176989018",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "WITHOUT A PRODUCT RETURN, NO PRODUCT EVALUATION IS ABLE TO BE CONDUCTED.  THE LOT NUMBER IS UNKNOWN; THEREFORE THE DEVICE HISTORY RECORDS ARE UNABLE TO BE REVIEWED.  CURRENT INFORMATION IS INSUFFICIENT TO PERMIT A VALID CONCLUSION ABOUT THE CAUSE OF THIS EVENT.  IF ADDITIONAL INFORMATION IS OBTAINED THAT ADDS VALUE TO THE RELEVANT CONTENT OF THIS REPORT AND/OR A CONCLUSION CAN BE DRAWN, A FOLLOW-UP REPORT WILL BE SENT."
+          },
+          {
+            "mdr_text_key": "176989019",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED THAT A PATIENT UNDERWENT A REVISION SURGERY TO ADDRESS A CLOSURE TOP THAT MIGRATED POSTOPERATIVELY. THE TOP WAS REMOVED AND REPLACED WITH AN ALTERNATE TO COMPLETE THE CASE. THERE WERE NO ADDITIONAL PATIENT IMPACTS REPORTED."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "10225 WESTMOOR DR.",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "303",
+        "manufacturer_contact_postal_code": "80021",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "N",
+        "manufacturer_contact_t_name": "MS",
+        "manufacturer_contact_state": "FL",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "PALM BEACH GARDENS",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Injury",
+        "manufacturer_contact_pcity": "56177667",
+        "manufacturer_contact_address_1": "4555 RIVERSIDE DRIVE",
+        "report_number": "0002023141-2020-00200",
+        "type_of_report": [
+          "Initial submission",
+          "Followup"
+        ],
+        "product_problem_flag": "N",
+        "date_received": "20200131",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "K101977",
+        "date_of_event": "20191120",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "33410",
+        "manufacturer_contact_plocal": "5617766700",
+        "reporter_occupation_code": "DENTIST",
+        "manufacturer_contact_l_name": "TAYLOR",
+        "source_type": [
+          "HEALTH PROFESSIONAL"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "33410",
+        "manufacturer_g1_state": "FL",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "561",
+        "date_added": "20200131",
+        "manufacturer_contact_f_name": "SUSANNE",
+        "device_date_of_manufacturer": "20190422",
+        "previous_use_code": "I",
+        "device": [
+          {
+            "manufacturer_d_address_1": "4555 RIVERSIDE DRIVE",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "FL",
+            "manufacturer_d_zip_code": "33410",
+            "manufacturer_d_city": "PALM BEACH GARDENS",
+            "lot_number": "1227398",
+            "manufacturer_d_postal_code": "33410",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "",
+            "date_received": "20200131",
+            "device_report_product_code": "DZE",
+            "device_operator": "LAY USER/PATIENT",
+            "device_availability": "Device was returned to manufacturer",
+            "other_id_number": "",
+            "generic_name": "DENTAL IMPLANT",
+            "manufacturer_d_name": "ZIMMER DENTAL",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "IMP,TSV,6.0,10,MTX,MG",
+            "openfda": {
+              "device_name": "Implant, Endosseous, Root-Form",
+              "medical_specialty_description": "Dental",
+              "device_class": "2",
+              "regulation_number": "872.3640"
+            },
+            "date_returned_to_manufacturer": "20200109",
+            "device_age_text": "DA",
+            "device_evaluated_by_manufacturer": "Y",
+            "catalog_number": "TSVT6B10",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Adverse Event Without Identified Device or Use Problem"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200331",
+        "health_professional": "Y",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "7363",
+        "manufacturer_contact_phone_number": "5617",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200131",
+            "sequence_number_outcome": [
+              "1. R"
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200330",
+        "initial_report_to_fda": "No",
+        "manufacturer_g1_country": "US",
+        "event_key": "",
+        "manufacturer_contact_city": "PALM BEACH GARDENS",
+        "mdr_report_key": "9655746",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200324",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "33410",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "ZIMMER DENTAL",
+        "distributor_address_1": "",
+        "adverse_event_flag": "Y",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "Y",
+        "mdr_text": [
+          {
+            "mdr_text_key": "178191755",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "ZIMMER BIOMET COMPLAINT (B)(4). PATIENT WEIGHT IS NOT PROVIDED / UNKNOWN. INITIAL REPORTER\u00bfS EMAIL ADDRESS IS NOT PROVIDED / UNKNOWN. PMA/510K: ADDITIONAL 510(K) NUMBER IS K101880."
+          },
+          {
+            "mdr_text_key": "178191756",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED THAT THE TSVT6B10 IMPLANT AT SITE # 30 WAS REMOVED AND SITE GRAFTED DUE TO PERI-IMPLANTITIS. DOCTOR ALSO REPORTS INFLAMMATION."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "4555 RIVERSIDE DRIVE",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "561",
+        "manufacturer_contact_postal_code": "33410",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "Y",
+        "manufacturer_contact_t_name": "",
+        "manufacturer_contact_state": "CA",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Malfunction",
+        "manufacturer_contact_pcity": "85840114",
+        "manufacturer_contact_address_1": "",
+        "report_number": "3013756811-2020-21327",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200304",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "P180008",
+        "date_of_event": "20191225",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "92121",
+        "manufacturer_contact_plocal": "8584011451",
+        "reporter_occupation_code": "OTHER",
+        "manufacturer_contact_l_name": "TRIER",
+        "source_type": [
+          "CONSUMER"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "",
+        "manufacturer_g1_state": "",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "858",
+        "date_added": "20200304",
+        "manufacturer_contact_f_name": "MICK",
+        "device_date_of_manufacturer": "20190301",
+        "previous_use_code": "R",
+        "device": [
+          {
+            "manufacturer_d_address_1": "11075 ROSELLE STREET",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "CA",
+            "manufacturer_d_zip_code": "92121",
+            "manufacturer_d_city": "SAN DIEGO",
+            "lot_number": "",
+            "manufacturer_d_postal_code": "92121",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "1000096",
+            "date_received": "20200304",
+            "device_report_product_code": "OZO",
+            "device_operator": "LAY USER/PATIENT",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "AUTOMATED INSULIN DOSING, THRESHOLD SUSPEND",
+            "manufacturer_d_name": "TANDEM DIABETES CARE",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "T:SLIM X2 INSULIN PUMP WITH BASAL-IQ TECHNOLOGY",
+            "openfda": {
+              "device_name": "Automated Insulin Dosing , Threshold Suspend",
+              "medical_specialty_description": "Unknown",
+              "device_class": "3",
+              "regulation_number": ""
+            },
+            "device_age_text": "",
+            "device_evaluated_by_manufacturer": "R",
+            "catalog_number": "1000912",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Physical Resistance/Sticking"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200314",
+        "health_professional": "I",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "8584",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200304",
+            "sequence_number_outcome": [
+              ""
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200304",
+        "initial_report_to_fda": "Yes",
+        "manufacturer_g1_country": "",
+        "event_key": "",
+        "manufacturer_contact_city": "SAN DIEGO",
+        "mdr_report_key": "9787814",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200212",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "",
+        "distributor_address_1": "",
+        "adverse_event_flag": "N",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "N",
+        "mdr_text": [
+          {
+            "mdr_text_key": "182011568",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "NO PRODUCT WAS RETURNED FOR EVALUATION. SHOULD NEW RELEVANT INFORMATION BECOME AVAILABLE, A SUPPLEMENTAL REPORT WILL BE SUBMITTED."
+          },
+          {
+            "mdr_text_key": "182011569",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED THAT RESISTANCE WAS EXPERIENCED DURING THE FILL PROCESS. CUSTOMER'S BLOOD GLUCOSE LEVEL WAS 160 MG/DL. A SYRINGE NEEDLE CHANGE WAS PERFORMED RESOLVING THE ISSUE."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "858",
+        "manufacturer_contact_postal_code": "92121",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "N",
+        "manufacturer_contact_t_name": "MRS.",
+        "manufacturer_contact_state": "CA",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "ANDOVER",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Malfunction",
+        "manufacturer_contact_pcity": "90937469",
+        "manufacturer_contact_address_1": "2271 COSMOS COURT",
+        "report_number": "2031642-2020-00803",
+        "type_of_report": [
+          "Initial submission",
+          "Followup",
+          "Followup"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200305",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "K082660",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "92011",
+        "manufacturer_contact_plocal": "9093746996",
+        "reporter_occupation_code": "OTHER",
+        "manufacturer_contact_l_name": "ABBOTT",
+        "source_type": [
+          "USER FACILITY"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "01810",
+        "manufacturer_g1_state": "MA",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "909",
+        "date_added": "20200305",
+        "manufacturer_contact_f_name": "MELISSA",
+        "device_date_of_manufacturer": "20150414",
+        "previous_use_code": "R",
+        "device": [
+          {
+            "manufacturer_d_address_1": "2271 COSMOS COURT",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "CA",
+            "manufacturer_d_zip_code": "92011",
+            "manufacturer_d_city": "CARLSBAD",
+            "lot_number": "",
+            "manufacturer_d_postal_code": "92011",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "V60",
+            "date_received": "20200305",
+            "device_report_product_code": "MNT",
+            "device_operator": "HEALTH PROFESSIONAL",
+            "device_availability": "Device was returned to manufacturer",
+            "other_id_number": "",
+            "generic_name": "VENTILATOR, CONTINUOUS, MINIMAL VENTILATORY SUPPORT,FACILITY USE",
+            "manufacturer_d_name": "RESPIRONICS CALIFORNIA, INC",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "V60 VENTILATOR",
+            "openfda": {
+              "device_name": "Ventilator, Continuous, Minimal Ventilatory Support, Facility Use",
+              "medical_specialty_description": "Anesthesiology",
+              "device_class": "2",
+              "regulation_number": "868.5895"
+            },
+            "date_returned_to_manufacturer": "20200610",
+            "device_age_text": "DA",
+            "device_evaluated_by_manufacturer": "Y",
+            "catalog_number": "",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Therapeutic or Diagnostic Output Failure"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200813",
+        "health_professional": "N",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "9093",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200305",
+            "sequence_number_outcome": [
+              ""
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200217",
+        "initial_report_to_fda": "No",
+        "manufacturer_g1_country": "US",
+        "event_key": "",
+        "manufacturer_contact_city": "CARLSBAD",
+        "mdr_report_key": "9795493",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200217",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "01810",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "PHILIPS MEDICAL SYSTEMS",
+        "distributor_address_1": "",
+        "adverse_event_flag": "N",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "N",
+        "mdr_text": [
+          {
+            "mdr_text_key": "190556360",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "DATE OF EVENT: (B)(6) 2020. DATE OF THIS REPORT: 05-MAR-2020."
+          },
+          {
+            "mdr_text_key": "190556361",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "THE CUSTOMER REPORTED NAV-RING FAILURE. THERE WAS NO PATIENT OR USER HARM REPORTED."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "3000 MINUTEMAN ROAD",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "909",
+        "manufacturer_contact_postal_code": "92011",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "LOT #1, ROAD #3, KM 79.7",
+        "event_location": "I",
+        "report_to_fda": "*",
+        "manufacturer_contact_t_name": "",
+        "manufacturer_contact_state": "RI",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "HUMACAO",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Injury",
+        "manufacturer_contact_pcity": "40182584",
+        "manufacturer_contact_address_1": "100 CROSSINGS BLVD.",
+        "report_number": "1213643-2020-02150",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "N",
+        "date_received": "20200306",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "K061314",
+        "date_of_event": "20180708",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "02886",
+        "manufacturer_contact_plocal": "4018258495",
+        "reporter_occupation_code": "003",
+        "manufacturer_contact_l_name": "TOPOULOS",
+        "source_type": [
+          "CONSUMER",
+          "OTHER"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "00791",
+        "manufacturer_g1_state": "PR",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "401",
+        "date_added": "20200306",
+        "manufacturer_contact_f_name": "ANDREW",
+        "previous_use_code": "I",
+        "device": [
+          {
+            "manufacturer_d_address_1": "100 CROSSINGS BLVD.",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "RI",
+            "manufacturer_d_zip_code": "02886",
+            "manufacturer_d_city": "WARWICK",
+            "lot_number": "NI",
+            "manufacturer_d_postal_code": "02886",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "NA",
+            "date_received": "20200306",
+            "device_report_product_code": "FTL",
+            "device_operator": "HEALTH PROFESSIONAL",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "SURGICAL MESH",
+            "manufacturer_d_name": "DAVOL INC., SUB. C.R. BARD, INC.",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "MESH - COMPOSIX KUGEL",
+            "openfda": {
+              "device_name": "Mesh, Surgical, Polymeric",
+              "medical_specialty_description": "General, Plastic Surgery",
+              "device_class": "2",
+              "regulation_number": "878.3300"
+            },
+            "device_age_text": "",
+            "device_evaluated_by_manufacturer": "R",
+            "catalog_number": "UNKAA016",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Defective Device",
+          "Insufficient Information"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200318",
+        "health_professional": "I",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "4018",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200306",
+            "sequence_number_outcome": [
+              "1. R",
+              " 2. S"
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200306",
+        "initial_report_to_fda": "No answer provided",
+        "manufacturer_g1_country": "US",
+        "event_key": "",
+        "manufacturer_contact_city": "WARWICK",
+        "mdr_report_key": "9798326",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200224",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "00791",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "BARD SHANNON LIMITED 3005636544",
+        "distributor_address_1": "",
+        "adverse_event_flag": "Y",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "Y",
+        "mdr_text": [
+          {
+            "mdr_text_key": "182551440",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "AT THIS TIME NO CONCLUSIONS CAN BE MADE. THE PATIENT'S ATTORNEY ALLEGES SURGICAL INTERVENTION AND \"PAST, PRESENT, AND FUTURE DAMAGES, INCLUDING BUT NOT LIMITED TO, MENTAL AND PHYSICAL PAIN AND SUFFERING FOR SEVERE AND PERMANENT PERSONAL INJURIES SUSTAINED BY THE PATIENT\"; HOWEVER, NO DETAILS HAVE BEEN PROVIDED. NO LOT NUMBER HAS BEEN PROVIDED; THEREFORE, A REVIEW OF THE MANUFACTURING RECORDS IS NOT POSSIBLE. SHOULD ADDITIONAL INFORMATION BE PROVIDED A SUPPLEMENTAL EMDR WILL BE SUBMITTED. NOT RETURNED."
+          },
+          {
+            "mdr_text_key": "182551441",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "ATTORNEY ALLEGES THAT THE PATIENT UNDERWENT SURGERY FOR IMPLANT OF AN UNSPECIFIED BARD/DAVOL COMPOSIX KUGEL HERNIA PATCH ON (B)(6) 2008. AS REPORTED, THE PATIENT IS MAKING A CLAIM FOR AN ADVERSE PATIENT OUTCOME AGAINST THE COMPOSIX KUGEL HERNIA PATCH. ATTORNEY ALLEGES THAT THE PATIENT UNDERWENT REVISION SURGERY ON (B)(6) 2018. ATTORNEY ALLEGES GENERAL ALLEGATIONS FOR \"PAST, PRESENT, AND FUTURE DAMAGES, INCLUDING BUT NOT LIMITED TO, MENTAL AND PHYSICAL PAIN AND SUFFERING FOR SEVERE AND PERMANENT PERSONAL INJURIES SUSTAINED BY THE PATIENT.\u00bf IT IS ALSO ALLEGED THAT THE PATIENT EXPERIENCED EMOTIONAL DISTRESS AND THE DEVICE WAS DEFECTIVE."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "SAN GERONIMO INDUSTRIAL PARK",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "401",
+        "manufacturer_contact_postal_code": "02886",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "OTHER",
+        "report_to_fda": "N",
+        "manufacturer_contact_t_name": "MRS",
+        "manufacturer_contact_state": "MA",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_contact_address_2": "",
+        "manufacturer_g1_city": "BASEL",
+        "manufacturer_contact_address_1": "60 MINUTEMAN ROAD",
+        "manufacturer_contact_pcity": "97874725",
+        "event_type": "Injury",
+        "report_number": "0009613348-2020-15376",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "N",
+        "date_received": "20200306",
+        "pma_pmn_number": "K140878",
+        "manufacturer_address_2": "",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "date_of_event": "20191216",
+        "report_date": "20200214",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "01810",
+        "reporter_occupation_code": "DENTIST",
+        "manufacturer_contact_plocal": "9787472509",
+        "manufacturer_contact_l_name": "JACKSON",
+        "source_type": [
+          "FOREIGN",
+          "HEALTH PROFESSIONAL"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "04002",
+        "reporter_country_code": "HR",
+        "date_facility_aware": "20200306",
+        "manufacturer_g1_state": "",
+        "manufacturer_contact_area_code": "978",
+        "date_added": "20200306",
+        "manufacturer_contact_f_name": "JENNIFER",
+        "device_date_of_manufacturer": "20181004",
+        "previous_use_code": "I",
+        "device": [
+          {
+            "manufacturer_d_address_1": "PETER MERIAN-WEG 12",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "",
+            "manufacturer_d_zip_code": "04002",
+            "manufacturer_d_city": "BASEL",
+            "lot_number": "TC421",
+            "manufacturer_d_postal_code": "04002",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "SLActive Roxolid BL",
+            "date_received": "20200306",
+            "device_report_product_code": "DZE",
+            "device_operator": "HEALTH PROFESSIONAL",
+            "device_availability": "Device was returned to manufacturer",
+            "other_id_number": "",
+            "generic_name": "ENDOSSEOUS DENTAL IMPLANT",
+            "manufacturer_d_name": "INSTITUT STRAUMANN AG",
+            "manufacturer_d_country": "CH",
+            "combination_product_flag": "N",
+            "brand_name": "BLT \u00d84.1MM RC, SLACTIVE\u00ae 10MM, TIZR, NTP",
+            "openfda": {
+              "device_name": "Implant, Endosseous, Root-Form",
+              "medical_specialty_description": "Dental",
+              "device_class": "2",
+              "regulation_number": "872.3640"
+            },
+            "date_returned_to_manufacturer": "20200214",
+            "device_age_text": "14 MO",
+            "device_evaluated_by_manufacturer": "Y",
+            "catalog_number": "021.5310",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Failure to Osseointegrate"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200310",
+        "health_professional": "Y",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "9787",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200306",
+            "sequence_number_outcome": [
+              "1. R"
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "initial_report_to_fda": "No",
+        "date_report": "20200306",
+        "distributor_state": "",
+        "event_key": "",
+        "manufacturer_g1_country": "CH",
+        "date_report_to_manufacturer": "20200214",
+        "manufacturer_contact_city": "ANDOVER",
+        "mdr_report_key": "9799152",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200214",
+        "manufacturer_name": "",
+        "remedial_action": [
+          ""
+        ],
+        "report_source_code": "Manufacturer report",
+        "manufacturer_g1_zip_code": "04002",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "INSTITUT STRAUMANN AG",
+        "manufacturer_state": "",
+        "distributor_address_1": "",
+        "adverse_event_flag": "Y",
+        "manufacturer_postal_code": "",
+        "distributor_address_2": "",
+        "manufacturer_country": "",
+        "single_use_flag": "Y",
+        "mdr_text": [
+          {
+            "mdr_text_key": "182386300",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "THE CLINICIAN REPORTS THE IMPLANT WAS INSERTED (B)(6) 2019 IN FDI 26. DETAILS OF SURGERY: SINUS AUGMENTATION. ON (B)(6) 2019, NON-OSSEOINTEGRATION WAS VERIFIED. PATIENT PRESENTED WITH BONE TYPE IV, FAIR ORAL HYGIENE AND INADEQUATE BONE QUALITY/QUANTITY. THE DEVICE WAS FORWARDED TO THE MANUFACTURER. THERE WERE NO REPORTED PATIENT INJURIES OR COMPLICATIONS."
+          }
+        ],
+        "distributor_name": "",
+        "number_patients_in_event": "",
+        "manufacturer_g1_address_1": "PETER MERIAN-WEG 12",
+        "distributor_zip_code": "",
+        "manufacturer_contact_postal_code": "01810",
+        "manufacturer_contact_pcountry": "",
+        "manufacturer_contact_exchange": "978"
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "ITABO, S.A. HAINA",
+        "event_location": "I",
+        "report_to_fda": "N",
+        "manufacturer_contact_t_name": "MS.",
+        "manufacturer_contact_state": "NC",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "SAN CRISTOBAL",
+        "manufacturer_contact_address_2": "SUITE 400",
+        "event_type": "Malfunction",
+        "manufacturer_contact_pcity": "33654246",
+        "manufacturer_contact_address_1": "7900 TRIAD CENTER DRIVE",
+        "report_number": "9618003-2020-04756",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "N",
+        "date_received": "20200306",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "EXEMPT",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "27409",
+        "manufacturer_contact_plocal": "3365424681",
+        "reporter_occupation_code": "OTHER",
+        "manufacturer_contact_l_name": "JOHNSON",
+        "source_type": [
+          "DISTRIBUTOR",
+          "FOREIGN"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "",
+        "manufacturer_g1_state": "",
+        "reporter_country_code": "",
+        "manufacturer_contact_area_code": "336",
+        "date_added": "20200306",
+        "manufacturer_contact_f_name": "JEANETTE",
+        "previous_use_code": "N",
+        "device": [
+          {
+            "manufacturer_d_address_1": "KM 18.5 PARQUE INDUSTRIAL",
+            "manufacturer_d_address_2": "ITABO, S.A. HAINA",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "",
+            "manufacturer_d_zip_code": "",
+            "manufacturer_d_city": "SAN CRISTOBAL",
+            "lot_number": "8G03354",
+            "manufacturer_d_postal_code": "",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "412002",
+            "date_received": "20200306",
+            "device_report_product_code": "NAD",
+            "device_operator": "0",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "DRESSING, WOUND, OCCLUSIVE",
+            "manufacturer_d_name": "CONVATEC DOMINICAN REPUBLIC INC",
+            "manufacturer_d_country": "",
+            "combination_product_flag": "N",
+            "brand_name": "DUODERM/GRANUFLEX/DUOACTIVE - MOISTURE RETENTIVE DUODERM CGF DRESSING",
+            "openfda": {
+              "device_name": "Dressing, Wound, Occlusive",
+              "medical_specialty_description": "General, Plastic Surgery",
+              "device_class": "1",
+              "regulation_number": "878.4020"
+            },
+            "device_age_text": "",
+            "device_evaluated_by_manufacturer": "N",
+            "catalog_number": "",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Device Contamination with Chemical or Other Material"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200309",
+        "health_professional": "I",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "3365",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200306",
+            "sequence_number_outcome": [
+              ""
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "initial_report_to_fda": "No answer provided",
+        "manufacturer_g1_country": "",
+        "event_key": "",
+        "manufacturer_contact_city": "GREENSBORO",
+        "mdr_report_key": "9800061",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200212",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "CONVATEC DOMINICAN REPUBLIC INC",
+        "distributor_address_1": "",
+        "adverse_event_flag": "N",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "*",
+        "mdr_text": [
+          {
+            "mdr_text_key": "200699751",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "DEVICE 1033 OF 1553. (B)(6). BASED ON THE AVAILABLE INFORMATION, THIS EVENT IS DEEMED TO BE A REPORTABLE MALFUNCTION. LOT 8G03354 WAS MANUFACTURED ON JULY 29, 2018 IN THE BODOLAY LINE WITH A TOTAL OF (B)(4) MARKET UNITS. A BATCH RECORD REVIEW ON FEBRUARY 20, 2020, TO VERIFY IF ALL THE APPLICABLE PROCEDURES WERE FOLLOWED AND NO ISSUES WERE FOUND; ALL THE COMPONENTS FOR ASSEMBLY WERE CORRECT PER BILL OF MATERIALS (BOM) AND ALL THE TOOLING INFORMATION DOCUMENTED WAS ALSO CORRECT, UNDER INTERNATIONAL COMMODITY CODE (ICC CODE) 412002 SYSTEM APPLICATION PRODUCTS (SAP) MATERIAL IDENTIFICATION (B)(4) AND MANUFACTURING ORDER (B)(4). THE BATCH RECORD REVIEW SUPPORTS THAT THERE WERE NO DISCREPANCIES RELATED TO THE ISSUE REPORTED. THERE ARE NO PHOTOGRAPHS ASSOCIATED WITH THIS CASE AND NO UNUSED RETURN SAMPLE WAS EXPECTED. BASED IN THE ANALYSIS PHASE CONCLUSIONS, THE ISSUE OF BLACK SPOTS ON PRODUCTS REPORTED BY THE CUSTOMERS WAS ATTRIBUTED TO THE FOLLOWING PROBABLE CAUSES: EMBEDDED SPOTS - ALLOWABLE FOR CHEMICAL MANUFACTURING AND CONTROL (CMC) MATERIAL, PRESENT IN ALL DRESSINGS IN VARYING DEGREES AND EVIDENCE OF PECTIN AND PENTALYN CONTRIBUTING TO SPOTS DUE TO CHANGE COLOR. HIGH TEMPERATURE AT MIXER 06 MAY CAUSE MASS BURNED. RESIDUES OF MASS ACCUMULATED IN THE MIXER EXTRUDER SCREWS REACHING TO THE PRODUCT AS PART OF THE NORMAL MIX OF MASS PROCESS. A TARGETED ROOT CAUSE INVESTIGATION FOR THIS KNOWN ISSUE/MALFUNCTION CODE HAS BEEN CONDUCTED. THE MANUFACTURING PROCESS, QUALITY INSPECTIONS, AND QUALITY CONTROL RECORDS WERE REVIEWED. AS PART OF THE ROOT CAUSE INVESTIGATION, DRESSINGS WITH THE ALLEGED FOREIGN MATTER SPOTS WERE SENT TO AN EXTERNAL LAB TO HAVE THE SPOTS ISOLATED FROM THE DRESSING FOR COMPOSITION TESTING AND ANALYSIS. THE RESULT OF THE ANALYSIS CONCLUDED THAT THE SPOTS WERE A RAW MATERIAL INGREDIENT USED IN THE FORMULATION OF THE HYDROCOLLOID. EFFECTS OF MIXING THE HYDROCOLLOID AT ALLOWABLE TEMPERATURE VARIATIONS WAS PERFORMED AT OUR MANUFACTURING FACILITY IN (B)(6). THE RESULTS SHOWED THAT WITHIN OUR VALIDATED PROCESSING SPECIFICATIONS, THE NUMBER AND SIZE OF SPOTS PRESENT IN THE HYDROCOLLOID COULD VARY BASED ON THE VALIDATED RANGE OF TEMPERATURE AND TIME PROFILES OF THE MIXING PROCESS. THE INVESTIGATION FOUND ONE ROOT CAUSE AND TWO CONTRIBUTING CAUSES FOR THE REPORTED MALFUNCTION AND THEY ARE AS FOLLOWS: ROOT CAUSE: THE VALIDATED ALLOWABLE RANGE FOR THE TEMPERATURE AND TIME PROFILES OF THE MIXING PROCESS ALLOWED FOR A RAW MATERIAL TO BECOME CHARRED DURING THE PROCESS AT THE HIGHER SETTINGS. CONTRIBUTING CAUSES: THE FREQUENCY OF THE MIXER CLEANING WAS NOT ADEQUATE WHEN THE MIXER WAS RUN AT THE UPPER END OF THE VALIDATED SETTINGS. THE MATERIAL SPECIFICATION FOR A POWDERED RAW MATERIAL USED IN THE FORMULATION ALLOW FOR BLACK SPOTS. THE BLACK SPOTS WITHIN THE POWDER CANNOT BE ISOLATED AND REMOVED. THE MATERIAL IS SUPPLIED WITH A CERTIFICATE OF ANALYSIS GUARANTEEING THE PRODUCT CONFORMS TO SPECIFICATION AND IS SAFE FOR USE. AS A RESULT OF THE INVESTIGATION, THE MIXING TEMPERATURE AND TIME PROFILES WERE TESTED UNDER ENGINEERING STUDIES TO FIND THE OPTIMUM SET POINT AND ALLOWABLE RANGE TO PREVENT THE CHARRING OF ANY OF THE RAW MATERIALS. THIS OPTIMUM SETTING HAS BEEN FULLY VALIDATED AND THE CHANGE IS AWAITING REGULATORY BODY APPROVAL TO BEGIN PRODUCTION. IN ADDITION, THE CLEANING FREQUENCY OF THE MIXER HAS BEEN INCREASED TO EVERY TWO BATCH RUNS TO ENSURE NO POTENTIAL CHARRED MATERIAL MAY BEGIN TO BUILD UP AND EVENTUALLY BECOME PRESENT IN OUR DRESSINGS. PRODUCT MONITORING REVIEWS WILL MONITOR FOR PRODUCT TRENDS IF THIS ISSUE WERE TO REOCCUR. TO DATE NO ADDITIONAL INFORMATION HAS BEEN RECEIVED. SHOULD ADDITIONAL INFORMATION BECOME AVAILABLE, A FOLLOW-UP REPORT WILL BE SUBMITTED. (B)(4)."
+          },
+          {
+            "mdr_text_key": "200699752",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED BLACK SPOTS WERE PRESENT ON THE DRESSING. THE PRODUCT WAS NOT USED ON A PATIENT. NO PHOTOGRAPHS WERE PROVIDED."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "KM 18.5 PARQUE INDUSTRIAL",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "336",
+        "manufacturer_contact_postal_code": "27409",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "0988",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "*",
+        "manufacturer_contact_t_name": "MS.",
+        "manufacturer_contact_state": "IN",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "WARSAW",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Malfunction",
+        "manufacturer_contact_pcity": "61074285",
+        "manufacturer_contact_address_1": "700 ORTHOPAEDIC DRIVE",
+        "report_number": "1818910-2020-07094",
+        "type_of_report": [
+          "Initial submission",
+          "Followup",
+          "Followup"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200306",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "",
+        "date_of_event": "20200220",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "46581",
+        "manufacturer_contact_plocal": "6107428552",
+        "reporter_occupation_code": "OTHER HEALTH CARE PROFESSIONAL",
+        "manufacturer_contact_l_name": "DITTY-BOVARD",
+        "source_type": [
+          "COMPANY REPRESENTATIVE",
+          "HEALTH"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "465820988",
+        "manufacturer_g1_state": "IN",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "610",
+        "date_added": "20200306",
+        "manufacturer_contact_f_name": "KARA",
+        "device_date_of_manufacturer": "20171107",
+        "previous_use_code": "U",
+        "device": [
+          {
+            "manufacturer_d_address_1": "LOUGHBEG RINGASKIDDY CO.",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "",
+            "manufacturer_d_zip_code": "",
+            "manufacturer_d_city": "CORK",
+            "lot_number": "KM855240",
+            "manufacturer_d_postal_code": "",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "2011-03-080",
+            "date_received": "20200306",
+            "device_report_product_code": "HXX",
+            "device_operator": "HEALTH PROFESSIONAL",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "KNEE INSTRUMENT : TORQUE DEVICES",
+            "manufacturer_d_name": "DEPUY IRELAND - 9616671",
+            "manufacturer_d_country": "EI",
+            "combination_product_flag": "N",
+            "brand_name": "SIG HP REV TORQ LMT SCRWDRVR",
+            "openfda": {
+              "device_name": "Screwdriver",
+              "medical_specialty_description": "Orthopedic",
+              "device_class": "1",
+              "regulation_number": "888.4540"
+            },
+            "device_age_text": "DA",
+            "device_evaluated_by_manufacturer": "R",
+            "catalog_number": "201103080",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Device-Device Incompatibility",
+          "Mechanical Jam"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200529",
+        "health_professional": "Y",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "0988",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "6107",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200306",
+            "sequence_number_outcome": [
+              ""
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200220",
+        "initial_report_to_fda": "No answer provided",
+        "manufacturer_g1_country": "US",
+        "event_key": "",
+        "manufacturer_contact_city": "WARSAW",
+        "mdr_report_key": "9800281",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200406",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "46582",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "DEPUY ORTHOPAEDICS, INC. 1818910",
+        "distributor_address_1": "",
+        "adverse_event_flag": "N",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "N",
+        "mdr_text": [
+          {
+            "mdr_text_key": "184545951",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "PRODUCT COMPLAINT #: (B)(4). IF INFORMATION IS OBTAINED THAT WAS NOT AVAILABLE FOR THE INITIAL MEDWATCH, A FOLLOW-UP MEDWATCH WILL BE FILED AS APPROPRIATE."
+          },
+          {
+            "mdr_text_key": "184545952",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED THAT THE HEX DRIVER AND HANDLE WILL NOT SEPARATE. THE HEX DRIVER FREELY SPINS IN HANDLE, THE HANDLE IS STRIPPED OUT. BOTH INSTRUMENTS NEED REPLACED."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "700 ORTHOPAEDIC DRIVE",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "610",
+        "manufacturer_contact_postal_code": "465810988",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "*",
+        "manufacturer_contact_t_name": "",
+        "manufacturer_contact_state": "MN",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "VILLALBA",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Injury",
+        "manufacturer_contact_pcity": "76350553",
+        "manufacturer_contact_address_1": "8200 CORAL SEA ST NE",
+        "report_number": "2649622-2020-04745",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200306",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "P920015",
+        "date_of_event": "20171016",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "55112",
+        "manufacturer_contact_plocal": "7635055378",
+        "reporter_occupation_code": "NURSE",
+        "manufacturer_contact_l_name": "BIXBY",
+        "source_type": [
+          "HEALTH PROFESSIONAL"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "00766",
+        "manufacturer_g1_state": "PR",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "763",
+        "date_added": "20200306",
+        "manufacturer_contact_f_name": "PAULA",
+        "device_date_of_manufacturer": "20070223",
+        "previous_use_code": "I",
+        "device": [
+          {
+            "manufacturer_d_address_1": "ROAD 149 KM 56.3",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "PR",
+            "manufacturer_d_zip_code": "00766",
+            "manufacturer_d_city": "VILLALBA",
+            "lot_number": "",
+            "manufacturer_d_postal_code": "00766",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "694965",
+            "date_received": "20200306",
+            "device_report_product_code": "LWS",
+            "device_operator": "LAY USER/PATIENT",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "DEFIBRILLATOR, AUTOMATIC IMPLANTABLE CARDIOVERTER",
+            "manufacturer_d_name": "MPRI",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "SPRINT FIDELIS",
+            "openfda": {
+              "device_name": "Implantable Cardioverter Defibrillator (Non-Crt)",
+              "medical_specialty_description": "Unknown",
+              "device_class": "3",
+              "regulation_number": ""
+            },
+            "expiration_date_of_device": "20090221",
+            "device_age_text": "",
+            "device_evaluated_by_manufacturer": "*",
+            "catalog_number": "694965",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "High impedance",
+          "Over-Sensing",
+          "Impedance Problem"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200316",
+        "health_professional": "Y",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "7635",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200306",
+            "sequence_number_outcome": [
+              "1. R"
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200306",
+        "initial_report_to_fda": "No answer provided",
+        "manufacturer_g1_country": "US",
+        "event_key": "",
+        "manufacturer_contact_city": "MOUNDS VIEW",
+        "mdr_report_key": "9802539",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200213",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "00766",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "MPRI",
+        "distributor_address_1": "",
+        "adverse_event_flag": "Y",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "Y",
+        "mdr_text": [
+          {
+            "mdr_text_key": "182540378",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "CONCOMITANT MEDICAL PRODUCTS: 5076-52 LEAD, IMPLANTED: (B)(6) 2007. IF INFORMATION IS PROVIDED IN THE FUTURE, A SUPPLEMENTAL REPORT WILL BE ISSUED."
+          },
+          {
+            "mdr_text_key": "182540379",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED THAT AN ALERT WAS TRIGGERED. THE RIGHT VENTRICULAR (RV) LEAD WAS NOTED TO HAVE VARYING/OUT OF RANGE PACING IMPEDANCE AND SHORT V-V INTERVALS. REPROGRAMMING WAS PERFORMED TO TURN OFF DEVICE DETECTIONS AS THE PATIENT EJECTION FRACTION WAS INDICATED TO HAVE IMPROVED AND THE PATIENT NO LONGER NEEDED DEFIBRILLATION. THE LEAD REMAINS IN USE. NO PATIENT COMPLICATIONS HAVE BEEN REPORTED AS A RESULT OF THIS EVENT."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "ROAD 149 KM 56.3",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "763",
+        "manufacturer_contact_postal_code": "55112",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "I",
+        "report_to_fda": "Y",
+        "manufacturer_contact_t_name": "",
+        "manufacturer_contact_state": "CA",
+        "manufacturer_link_flag": "Y",
+        "manufacturer_g1_city": "",
+        "manufacturer_contact_address_2": "",
+        "event_type": "Malfunction",
+        "manufacturer_contact_pcity": "85840114",
+        "manufacturer_contact_address_1": "",
+        "report_number": "3013756811-2020-24007",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200310",
+        "manufacturer_address_2": "",
+        "pma_pmn_number": "P180008",
+        "date_of_event": "20200109",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "92121",
+        "manufacturer_contact_plocal": "8584011451",
+        "reporter_occupation_code": "OTHER",
+        "manufacturer_contact_l_name": "TRIER",
+        "source_type": [
+          "CONSUMER"
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "",
+        "manufacturer_g1_state": "",
+        "reporter_country_code": "US",
+        "manufacturer_contact_area_code": "858",
+        "date_added": "20200310",
+        "manufacturer_contact_f_name": "MICK",
+        "device_date_of_manufacturer": "20190401",
+        "previous_use_code": "R",
+        "device": [
+          {
+            "manufacturer_d_address_1": "11075 ROSELLE STREET",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "CA",
+            "manufacturer_d_zip_code": "92121",
+            "manufacturer_d_city": "SAN DIEGO",
+            "lot_number": "",
+            "manufacturer_d_postal_code": "92121",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "1000096",
+            "date_received": "20200310",
+            "device_report_product_code": "OZO",
+            "device_operator": "LAY USER/PATIENT",
+            "device_availability": "No",
+            "other_id_number": "",
+            "generic_name": "AUTOMATED INSULIN DOSING, THRESHOLD SUSPEND",
+            "manufacturer_d_name": "TANDEM DIABETES CARE",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "T:SLIM X2 INSULIN PUMP WITH BASAL-IQ TECHNOLOGY",
+            "openfda": {
+              "device_name": "Automated Insulin Dosing , Threshold Suspend",
+              "medical_specialty_description": "Unknown",
+              "device_class": "3",
+              "regulation_number": ""
+            },
+            "device_age_text": "",
+            "device_evaluated_by_manufacturer": "R",
+            "catalog_number": "1000886",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Physical Resistance/Sticking"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "US",
+        "date_changed": "20200314",
+        "health_professional": "I",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "8584",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200310",
+            "sequence_number_outcome": [
+              ""
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "distributor_state": "",
+        "date_report": "20200310",
+        "initial_report_to_fda": "Yes",
+        "manufacturer_g1_country": "",
+        "event_key": "",
+        "manufacturer_contact_city": "SAN DIEGO",
+        "mdr_report_key": "9811210",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_manufacturer_received": "20200219",
+        "manufacturer_name": "",
+        "report_source_code": "Manufacturer report",
+        "remedial_action": [
+          ""
+        ],
+        "manufacturer_g1_zip_code": "",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "",
+        "distributor_address_1": "",
+        "adverse_event_flag": "N",
+        "manufacturer_state": "",
+        "distributor_address_2": "",
+        "manufacturer_postal_code": "",
+        "manufacturer_country": "",
+        "single_use_flag": "N",
+        "mdr_text": [
+          {
+            "mdr_text_key": "182734145",
+            "text_type_code": "Additional Manufacturer Narrative",
+            "patient_sequence_number": "1",
+            "text": "NO PRODUCT WAS RETURNED FOR EVALUATION. SHOULD NEW RELEVANT INFORMATION BECOME AVAILABLE, A SUPPLEMENTAL REPORT WILL BE SUBMITTED."
+          },
+          {
+            "mdr_text_key": "182734146",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "IT WAS REPORTED THAT RESISTANCE WAS EXPERIENCED DURING THE FILL PROCESS WITH MULTIPLE CARTRIDGES. CUSTOMER'S BLOOD GLUCOSE LEVEL WAS APPROXIMATELY 100 MG/DL. A SYRINGE NEEDLE CHANGE WAS PERFORMED RESOLVING THE ISSUE."
+          }
+        ],
+        "number_patients_in_event": "",
+        "distributor_name": "",
+        "manufacturer_g1_address_1": "",
+        "distributor_zip_code": "",
+        "manufacturer_contact_exchange": "858",
+        "manufacturer_contact_postal_code": "92121",
+        "manufacturer_contact_pcountry": ""
+      },
+      {
+        "manufacturer_contact_zip_ext": "",
+        "manufacturer_g1_address_2": "",
+        "event_location": "OUTPATIENT TREATMENT FACILITY",
+        "report_to_fda": "Y",
+        "manufacturer_contact_t_name": "",
+        "manufacturer_contact_state": "",
+        "manufacturer_link_flag": "N",
+        "manufacturer_contact_address_2": "",
+        "manufacturer_g1_city": "",
+        "manufacturer_contact_address_1": "",
+        "manufacturer_contact_pcity": "",
+        "event_type": "Malfunction",
+        "report_number": "9811290",
+        "type_of_report": [
+          "Initial submission"
+        ],
+        "product_problem_flag": "Y",
+        "date_received": "20200310",
+        "pma_pmn_number": "",
+        "manufacturer_address_2": "",
+        "reprocessed_and_reused_flag": "N",
+        "manufacturer_address_1": "",
+        "date_of_event": "20200114",
+        "report_date": "20200122",
+        "exemption_number": "",
+        "manufacturer_contact_zip_code": "",
+        "reporter_occupation_code": "RISK MANAGER",
+        "manufacturer_contact_plocal": "",
+        "manufacturer_contact_l_name": "",
+        "source_type": [
+          ""
+        ],
+        "distributor_zip_code_ext": "",
+        "manufacturer_g1_postal_code": "",
+        "reporter_country_code": "",
+        "manufacturer_g1_state": "",
+        "manufacturer_contact_area_code": "",
+        "date_added": "20200310",
+        "manufacturer_contact_f_name": "",
+        "previous_use_code": "N",
+        "device": [
+          {
+            "manufacturer_d_address_1": "785 FORT MILL HWY.",
+            "manufacturer_d_address_2": "",
+            "device_event_key": "",
+            "device_sequence_number": "1",
+            "manufacturer_d_state": "SC",
+            "manufacturer_d_zip_code": "29707",
+            "manufacturer_d_city": "FORT MILL",
+            "lot_number": "",
+            "manufacturer_d_postal_code": "29707",
+            "manufacturer_d_zip_code_ext": "",
+            "model_number": "",
+            "date_received": "20200310",
+            "device_report_product_code": "FMF",
+            "device_operator": "I",
+            "device_availability": "Yes",
+            "other_id_number": "",
+            "generic_name": "SYRINGE, PISTON",
+            "manufacturer_d_name": "CARDINAL HEALTH 200, LLC",
+            "manufacturer_d_country": "US",
+            "combination_product_flag": "N",
+            "brand_name": "MONOJECT 3 ML SYRINGE",
+            "openfda": {
+              "device_name": "Syringe, Piston",
+              "medical_specialty_description": "General Hospital",
+              "device_class": "2",
+              "regulation_number": "880.5860"
+            },
+            "device_age_text": "1 DA",
+            "device_evaluated_by_manufacturer": "*",
+            "catalog_number": "11832115",
+            "implant_flag": "",
+            "date_removed_flag": ""
+          }
+        ],
+        "product_problems": [
+          "Crack",
+          "Leak/Splash",
+          "Syringe"
+        ],
+        "manufacturer_zip_code": "",
+        "manufacturer_contact_country": "",
+        "date_changed": "20200406",
+        "health_professional": "N",
+        "summary_report_flag": "N",
+        "manufacturer_g1_zip_code_ext": "",
+        "manufacturer_city": "",
+        "manufacturer_contact_extension": "",
+        "manufacturer_contact_phone_number": "",
+        "patient": [
+          {
+            "sequence_number_treatment": [
+              ""
+            ],
+            "patient_sequence_number": "1",
+            "date_received": "20200310",
+            "sequence_number_outcome": [
+              ""
+            ]
+          }
+        ],
+        "distributor_city": "",
+        "initial_report_to_fda": "Yes",
+        "date_report": "20200122",
+        "distributor_state": "",
+        "event_key": "",
+        "manufacturer_g1_country": "",
+        "manufacturer_contact_city": "",
+        "date_report_to_manufacturer": "20200310",
+        "mdr_report_key": "9811290",
+        "removal_correction_number": "",
+        "number_devices_in_event": "",
+        "date_report_to_fda": "20200122",
+        "manufacturer_name": "",
+        "remedial_action": [
+          ""
+        ],
+        "report_source_code": "User Facility report",
+        "manufacturer_g1_zip_code": "",
+        "report_to_manufacturer": "",
+        "manufacturer_zip_code_ext": "",
+        "manufacturer_g1_name": "",
+        "manufacturer_state": "",
+        "distributor_address_1": "",
+        "adverse_event_flag": "N",
+        "manufacturer_postal_code": "",
+        "distributor_address_2": "",
+        "manufacturer_country": "",
+        "single_use_flag": "*",
+        "mdr_text": [
+          {
+            "mdr_text_key": "182762633",
+            "text_type_code": "Description of Event or Problem",
+            "patient_sequence_number": "1",
+            "text": "DOCTOR WAS PERFORMING AN INJECTION ON A PT AND THE SYRINGE BEGAN TO LEAK DURING THE ADMINISTRATION OF THE LIDOCAINE. UPON FURTHER EVALUATION OF THE PROBLEM A CRACK WAS DISCOVERED IN THE BODY OF THE SYRINGE. CONCERN IS POSSIBLE RISK OF INFECTION DUE TO POSSIBLE LACK OF STERILITY."
+          }
+        ],
+        "distributor_name": "",
+        "number_patients_in_event": "",
+        "manufacturer_g1_address_1": "",
+        "distributor_zip_code": "",
+        "manufacturer_contact_postal_code": "",
+        "manufacturer_contact_pcountry": "",
+        "manufacturer_contact_exchange": ""
+      }
+    ]
+}
