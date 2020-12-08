@@ -12,6 +12,7 @@ S3_TARGET_BUCKET = os.environ['S3_TARGET_BUCKET']
 main_fields=['product_problem_flag', 'date_received', 'source_type', 'event_location', 'type_of_report', 'device', 'product_problems', 'adverse_event_flag', 'mdr_text']
 device_fields=['manufacturer_d_zip_code','lot_number', 'model_number', 'generic_name', 'device_operator', 'manufacturer_d_name', 'catalog_number', 'device_name', 'medical_specialty_description', 'device_class', 'regulation_number']
 openfda_device_fields=['medical_specialty_description', 'device_class', 'regulation_number']
+missing_field_default = 'NA'
 
 def lambda_handler(event, context):
     for record in event['Records']:
@@ -65,30 +66,47 @@ def write_file_to_s3(file_name, bucket, object_name = None):
         print(e)
         return False
     return True
-    
+
 def transform_mdr(mdr):
     type_code = mdr['text_type_code']
     pythonized_string = type_code.lower().replace(' ', '_')
     return (pythonized_string, mdr['text'])
 
 def filter_device(dic):
-    #flatten by pulling the openfda fields one level up
-    #print(json.dumps(dict(dic), indent=1, sort_keys=True, separators=(',',': ')))
-    dic.update({'device_name': dic['openfda']['device_name']})
-    dic.update({'medical_specialty_description': dic['openfda']['medical_specialty_description']})
-    dic.update({'device_class': dic['openfda']['device_class']})
-    dic.update({'regulation_number': dic['openfda']['regulation_number']})
+    if ('openfda' in dic):
+        #flatten by pulling the openfda fields one level up
+        if ('device_name' in dic['openfda']):
+            dic.update({'device_name': dic['openfda']['device_name']})
+        else:
+            dic.update({'device_name': missing_field_default})
+        if ('medical_specialty_description' in dic['openfda']):
+            dic.update({'medical_specialty_description': dic['openfda']['medical_specialty_description']})
+        else:
+            dic.update({'medical_specialty_description': missing_field_default})
+        if ('device_class' in dic['openfda']):
+            dic.update({'device_class': dic['openfda']['device_class']})
+        else:
+            dic.update({'device_class': missing_field_default})
+        if ('regulation_number' in dic['openfda']):
+            dic.update({'regulation_number': dic['openfda']['regulation_number']})
+        else:
+            dic.update({'regulation_number': missing_field_default})
+    else:
+        dic.update({'device_name': missing_field_default})
+        dic.update({'medical_specialty_description': missing_field_default})
+        dic.update({'device_class': missing_field_default})
+        dic.update({'regulation_number': missing_field_default})
     #then filter all unwanted fields (will remove the openfda field as well)
-    return {key: dic[key] for key in device_fields}
+    return {key: dic[key] if key in device_fields else missing_field_default for key in device_fields}
 
 def flatten_mdr(dic):
-    #print(json.dumps(dict(dic), indent=1, sort_keys=True, separators=(',',': ')))
-    if ('mdr_text' in dic):
-        return map(transform_mdr, dic['mdr_text'])
+    return map(transform_mdr, dic['mdr_text'])
 
 def filter_fields(dic):
-    main_filtered = {key: dic[key] for key in main_fields}
+    main_filtered = {key: dic[key] if key in dic else missing_field_default for key in main_fields}
     main_filtered.update({'device': list(map(filter_device, main_filtered['device']))})
-    main_filtered.update(list(flatten_mdr(main_filtered)))
-    del main_filtered['mdr_text']
+    if ('mdr_text' in dic):
+        if (not dic['mdr_text']):
+            main_filtered.update(list(flatten_mdr(main_filtered)))
+        del main_filtered['mdr_text']
     return main_filtered
