@@ -27,7 +27,7 @@
             "arn": "arn:aws:s3:::fda-data-raw"
           },
           "object": {
-            "key": "test/key.txt",
+            "key": "2020/device-event-0001-of-0004.json.zip",
             "size": 1024,
             "eTag": "0123456789abcdef0123456789abcdef",
             "sequencer": "0A1B2C3D4E5F678901"
