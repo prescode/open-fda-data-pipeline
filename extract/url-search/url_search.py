@@ -91,7 +91,7 @@ def lambda_handler(event, context):
         i += 1
         file_name = "url_" + str(i) + ".json"
         with open(file_name, 'w') as outfile:
-            json.dump({'url:': url}, outfile)
+            json.dump({'url': url}, outfile)
         write_file_to_s3(outfile.name, S3_BUCKET)
 
 #tests
