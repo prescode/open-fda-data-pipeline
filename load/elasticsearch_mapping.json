@@ -3,7 +3,7 @@ PUT /index1
     "mappings": {
         "properties": {
             "product_problem_flag": {"type": "keyword"},
-            "date_of_event": {"type": "date", "format":"yyyyMMdd"},
+            "date_received": {"type": "date", "format":"yyyyMMdd"},
             "source_type": {"type": "keyword"},
             "event_location": {"type": "keyword"},
             "type_of_report": {"type": "keyword"},
