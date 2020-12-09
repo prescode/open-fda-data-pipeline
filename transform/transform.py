@@ -23,16 +23,16 @@ def lambda_handler(event, context):
         print('s3 bucket: ' + bucket_name + '_ key: ' + key)
         year = key.split('/')[-2]
         file_name = key.split('/')[-1]
-        zip_file_path = year + "/" + file_name
+        object_name = year + '/' + file_name
+        temp_directory = '/tmp/'
+        zip_file_path = temp_directory + file_name
         #remove .zip for the new filename
         extracted_file_path = os.path.splitext(zip_file_path)[0]
-        if not os.path.exists(year):
-            os.makedirs(year)
         s3 = boto3.resource('s3')
         s3.Bucket(bucket_name).download_file(key, zip_file_path)
         #extract zip file
         with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
-            zip_ref.extractall(year)
+            zip_ref.extractall(temp_directory)
         os.remove(zip_file_path)
         #open file and load json
         with open(extracted_file_path, 'r') as read_file:
@@ -49,7 +49,7 @@ def lambda_handler(event, context):
         with zipfile.ZipFile(temp_zip_file_path, 'w', compression=zipfile.ZIP_DEFLATED) as zip_ref:
             zip_ref.writestr(extracted_file_path, json_string)
         #write to s3
-        write_file_to_s3(temp_zip_file_path, S3_TARGET_BUCKET, zip_file_path)
+        write_file_to_s3(temp_zip_file_path, S3_TARGET_BUCKET, object_name)
 
 def write_file_to_s3(file_name, bucket, object_name = None):
     # If S3 object_name was not specified, use file_name
