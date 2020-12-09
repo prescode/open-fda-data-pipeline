@@ -8,11 +8,13 @@ from botocore.client import ClientError
 S3_TARGET_BUCKET = os.environ['s3_target_bucket']
 #set environ variable for testing
 #S3_TARGET_BUCKET = 'fda-data-clean'
+MISSING_FIELD_DEFAULT_VALUE = os.environ['missing_field_default_value']
+#set environ variable for testing
+#MISSING_FIELD_DEFAULT_VALUE = 'NA'
 
 main_fields=['product_problem_flag', 'date_received', 'source_type', 'event_location', 'type_of_report', 'device', 'product_problems', 'adverse_event_flag', 'mdr_text']
 device_fields=['manufacturer_d_zip_code','lot_number', 'model_number', 'generic_name', 'device_operator', 'manufacturer_d_name', 'catalog_number', 'device_name', 'medical_specialty_description', 'device_class', 'regulation_number']
 openfda_device_fields=['medical_specialty_description', 'device_class', 'regulation_number']
-missing_field_default = 'NA'
 
 def lambda_handler(event, context):
     for record in event['Records']:
@@ -73,32 +75,32 @@ def filter_device(dic):
         if ('device_name' in dic['openfda']):
             dic.update({'device_name': dic['openfda']['device_name']})
         else:
-            dic.update({'device_name': missing_field_default})
+            dic.update({'device_name': MISSING_FIELD_DEFAULT_VALUE})
         if ('medical_specialty_description' in dic['openfda']):
             dic.update({'medical_specialty_description': dic['openfda']['medical_specialty_description']})
         else:
-            dic.update({'medical_specialty_description': missing_field_default})
+            dic.update({'medical_specialty_description': MISSING_FIELD_DEFAULT_VALUE})
         if ('device_class' in dic['openfda']):
             dic.update({'device_class': dic['openfda']['device_class']})
         else:
-            dic.update({'device_class': missing_field_default})
+            dic.update({'device_class': MISSING_FIELD_DEFAULT_VALUE})
         if ('regulation_number' in dic['openfda']):
             dic.update({'regulation_number': dic['openfda']['regulation_number']})
         else:
-            dic.update({'regulation_number': missing_field_default})
+            dic.update({'regulation_number': MISSING_FIELD_DEFAULT_VALUE})
     else:
-        dic.update({'device_name': missing_field_default})
-        dic.update({'medical_specialty_description': missing_field_default})
-        dic.update({'device_class': missing_field_default})
-        dic.update({'regulation_number': missing_field_default})
+        dic.update({'device_name': MISSING_FIELD_DEFAULT_VALUE})
+        dic.update({'medical_specialty_description': MISSING_FIELD_DEFAULT_VALUE})
+        dic.update({'device_class': MISSING_FIELD_DEFAULT_VALUE})
+        dic.update({'regulation_number': MISSING_FIELD_DEFAULT_VALUE})
     #then filter all unwanted fields (will remove the openfda field as well)
-    return {key: dic[key] if key in device_fields else missing_field_default for key in device_fields}
+    return {key: dic[key] if key in device_fields else MISSING_FIELD_DEFAULT_VALUE for key in device_fields}
 
 def flatten_mdr(dic):
     return map(transform_mdr, dic['mdr_text'])
 
 def filter_fields(dic):
-    main_filtered = {key: dic[key] if key in dic else missing_field_default for key in main_fields}
+    main_filtered = {key: dic[key] if key in dic else MISSING_FIELD_DEFAULT_VALUE for key in main_fields}
     main_filtered.update({'device': list(map(filter_device, main_filtered['device']))})
     if ('mdr_text' in dic):
         if (dic['mdr_text']):
