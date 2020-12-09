@@ -1,2 +1,10 @@
-Create S3 buckets for files, raw data, and transformed data
+Create S3 buckets for url files, raw data, and transformed data
+
+Create lambda with sufficient permissions for:
+url-search
+extract-data
+transform
+load
+
+Example: https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
 
