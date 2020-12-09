@@ -1,10 +1,20 @@
-Create S3 buckets for url files, raw data, and transformed data
+Create S3 buckets for url files, raw data, and cleaned data
 
 Create lambda with sufficient permissions for:
 url-search
 extract-data
 transform
 load
+
+add environment variables to lambdas
+
+add triggers to lambdas
+
+upload deployment packages for each lambda
+
+update handler with name of python file
+
+update runtime and memory as needed (TODO: document settings)
 
 Example: https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
 
