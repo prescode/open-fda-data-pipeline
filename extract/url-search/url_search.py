@@ -87,7 +87,9 @@ def search_url(start_year, end_year = date.today().year):
 
 def lambda_handler(event, context):
     i = 0
-    for url in search_url(START_YEAR):
+    #environment variables are always strings
+    start_year_int = int(START_YEAR)
+    for url in search_url(start_year_int):
         i += 1
         file_name = "url_" + str(i) + ".json"
         with open(file_name, 'w') as outfile:
