@@ -5,7 +5,7 @@ import os
 import zipfile
 from botocore.client import ClientError
 
-S3_TARGET_BUCKET = os.environ['S3_TARGET_BUCKET']
+S3_TARGET_BUCKET = os.environ['s3_target_bucket']
 #set environ variable for testing
 #S3_TARGET_BUCKET = 'fda-data-clean'
 
@@ -43,10 +43,11 @@ def lambda_handler(event, context):
         list_transformed_data = list(transformed_data)
         json_string = json.dumps(list_transformed_data)
         #zip transformed data
-        with zipfile.ZipFile(zip_file_path, 'w', compression=zipfile.ZIP_DEFLATED) as zip_ref:
+        temp_zip_file_path = '/tmp/' + zip_file_path
+        with zipfile.ZipFile(temp_zip_file_path, 'w', compression=zipfile.ZIP_DEFLATED) as zip_ref:
             zip_ref.writestr(extracted_file_path, json_string)
         #write to s3
-        write_file_to_s3(zip_file_path, S3_TARGET_BUCKET)
+        write_file_to_s3(temp_zip_file_path, S3_TARGET_BUCKET, zip_file_path)
 
 def write_file_to_s3(file_name, bucket, object_name = None):
     # If S3 object_name was not specified, use file_name
