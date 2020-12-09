@@ -5,7 +5,7 @@ import urllib
 import boto3
 from botocore.client import ClientError
 
-S3_BUCKET = os.environ['fda-data-extract-urls']
+S3_BUCKET = os.environ['site']
 START_YEAR = os.environ['start_year']
 
 def write_file_to_s3(file_name, bucket, object_name = None):
