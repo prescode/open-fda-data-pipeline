@@ -5,8 +5,15 @@ import urllib
 import boto3
 from botocore.client import ClientError
 
-S3_BUCKET = os.environ['site']
+SITE = os.environ['site']
+#test set
+#SITE = https://download.open.fda.gov/device/event/
 START_YEAR = os.environ['start_year']
+#test set
+#START_YEAR = 2019
+TARGET_S3_BUCKET = os.environ['target_s3_bucket']
+#test set
+#TARGET_S3_BUCKET = fda-data-extract-urls
 
 def write_file_to_s3(file_name, bucket, object_name = None):
     # If S3 object_name was not specified, use file_name
@@ -21,8 +28,7 @@ def write_file_to_s3(file_name, bucket, object_name = None):
         return False
     return True
 
-def search_url(start_year, end_year = date.today().year):
-    base_url = "https://download.open.fda.gov/device/event/"
+def search_url(base_url, start_year, end_year = date.today().year):
     #start year must be on or after 1992
     start_year = date(start_year, 6, 1)
     print("Start Year: " + str(start_year.year))
@@ -89,9 +95,9 @@ def lambda_handler(event, context):
     i = 0
     #environment variables are always strings
     start_year_int = int(START_YEAR)
-    for url in search_url(start_year_int):
+    for url in search_url(SITE, start_year_int):
         i += 1
         file_name = "url_" + str(i) + ".json"
-        with open(file_name, 'w') as outfile:
+        with open('/tmp/' + file_name, 'w') as outfile:
             json.dump({'url': url}, outfile)
-        write_file_to_s3(outfile.name, S3_BUCKET)
+        write_file_to_s3(outfile.name, TARGET_S3_BUCKET, file_name)
