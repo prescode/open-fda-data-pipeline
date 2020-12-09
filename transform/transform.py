@@ -18,7 +18,7 @@ def lambda_handler(event, context):
     for record in event['Records']:
         bucket_name = record['s3']['bucket']['name']
         key = record['s3']['object']['key']
-        print('s3 bucket: ' + bucket_name + '_s3 key: ' + key)
+        print('s3 bucket: ' + bucket_name + '_ key: ' + key)
         year = key.split('/')[-2]
         file_name = key.split('/')[-1]
         zip_file_path = year + "/" + file_name
@@ -39,19 +39,17 @@ def lambda_handler(event, context):
         #extract results (remove metadata header)
         results = data['results']
         #take first 10 results for testing
-        sample_records = results[:100]
-        with open("sample_records.json", "w") as write_file:
-            json.dump(sample_records, write_file, separators=(',', ':'))
-        transformed_data = map(filter_fields, sample_records)
+        results = results[:10] #remove after testing!
+        transformed_data = map(filter_fields, results)
         list_transformed_data = list(transformed_data)
-        #zip transformed data
         with open("sample_transformed_records.json", "w") as write_file:
             json.dump(list_transformed_data, write_file, separators=(',', ':'))
+        print()
+        #zip transformed data
+        with zipfile.ZipFile(extracted_file_path, 'w', compression=zipfile.ZIP_DEFLATED) as zip_ref:
+            zip_ref.writestr(zip_file_path, json.dumps(list_transformed_data))
         #write to s3
-        #re-use the key from the read file for the destination file
-        with open(key, 'w') as write_file:
-            json.dump(list_transformed_data, write_file, separators=(',', ':'))
-            write_file_to_s3(write_file.name, S3_TARGET_BUCKET)
+        write_file_to_s3(zip_file_path, S3_TARGET_BUCKET)
 
 def write_file_to_s3(file_name, bucket, object_name = None):
     # If S3 object_name was not specified, use file_name
@@ -106,7 +104,7 @@ def filter_fields(dic):
     main_filtered = {key: dic[key] if key in dic else missing_field_default for key in main_fields}
     main_filtered.update({'device': list(map(filter_device, main_filtered['device']))})
     if ('mdr_text' in dic):
-        if (not dic['mdr_text']):
+        if (dic['mdr_text']):
             main_filtered.update(list(flatten_mdr(main_filtered)))
         del main_filtered['mdr_text']
     return main_filtered
