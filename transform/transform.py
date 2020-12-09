@@ -39,15 +39,12 @@ def lambda_handler(event, context):
         #extract results (remove metadata header)
         results = data['results']
         #take first 10 results for testing
-        results = results[:10] #remove after testing!
         transformed_data = map(filter_fields, results)
         list_transformed_data = list(transformed_data)
-        with open("sample_transformed_records.json", "w") as write_file:
-            json.dump(list_transformed_data, write_file, separators=(',', ':'))
-        print()
+        json_string = json.dumps(list_transformed_data)
         #zip transformed data
-        with zipfile.ZipFile(extracted_file_path, 'w', compression=zipfile.ZIP_DEFLATED) as zip_ref:
-            zip_ref.writestr(zip_file_path, json.dumps(list_transformed_data))
+        with zipfile.ZipFile(zip_file_path, 'w', compression=zipfile.ZIP_DEFLATED) as zip_ref:
+            zip_ref.writestr(extracted_file_path, json_string)
         #write to s3
         write_file_to_s3(zip_file_path, S3_TARGET_BUCKET)
 
