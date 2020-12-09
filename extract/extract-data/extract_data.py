@@ -5,7 +5,7 @@ import os
 import urllib.request
 from botocore.client import ClientError
 
-S3_TARGET_BUCKET = os.environ['S3_TARGET_BUCKET']
+S3_TARGET_BUCKET = os.environ['s3_target_bucket']
 #for local testing
 #S3_TARGET_BUCKET = 'fda-data-raw'
 
@@ -33,8 +33,7 @@ def lambda_handler(event, context):
         url = json.loads(body)['url']
         year = url.split('/')[-2][:-2]
         file_name =  url.split('/')[-1]
-        if not os.path.exists(year):
-            os.makedirs(year)
         new_file_path = year + "/" + file_name
-        urllib.request.urlretrieve(url, new_file_path)
-        write_file_to_s3(new_file_path, S3_TARGET_BUCKET)
+        temp_file_path = '/tmp/temp.zip'
+        urllib.request.urlretrieve(url, temp_file_path)
+        write_file_to_s3(temp_file_path, S3_TARGET_BUCKET, new_file_path)
