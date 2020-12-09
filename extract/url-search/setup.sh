@@ -30,6 +30,3 @@ cd ..
 rm -rf ./setup
 deactivate
 rm -rf ./.venv
-# changing dirs back to dir from before
-echo "Opening folder containg function package - 'package.zip'"
-open .
