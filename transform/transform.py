@@ -50,7 +50,6 @@ def lambda_handler(event, context):
 
 def write_file_to_s3(file_name, bucket, object_name = None):
     # If S3 object_name was not specified, use file_name
-    print(type(file_name))
     if object_name is None:
         object_name = file_name
     # Upload the file
