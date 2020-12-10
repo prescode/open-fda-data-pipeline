@@ -29,8 +29,11 @@ def lambda_handler(event, context):
         response = s3.get_object(Bucket=bucket_name, Key=key)
         body = response['Body'].read()
         url = json.loads(body)['url']
-        year = url.split('/')[-2][:-2]
+        year_q = url.split('/')[-2]
+        q = year_q[4:]
+        year = year_q[:4]
         file_name =  url.split('/')[-1]
-        new_file_path = year + "/" + file_name
+        new_file_path = year + "/" + q + '/' + file_name
+        print(new_file_path)
         with urlopen(url) as zip_response:
             write_object_to_s3(BytesIO(zip_response.read()), S3_TARGET_BUCKET, new_file_path)
