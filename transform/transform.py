@@ -35,13 +35,15 @@ def lambda_handler(event, context):
         #extract results (remove metadata header)
         data = json.loads(extracted_data)
         results = data['results']
+        #sample results for testing
+        #results = results[:5]
         transformed_data = map(filter_fields, results)
         list_transformed_data = list(transformed_data)
         json_string = json.dumps(list_transformed_data)
         output_object = BytesIO()
         #zip transformed data
         with zipfile.ZipFile(output_object, 'w', compression=zipfile.ZIP_DEFLATED) as zip_ref:
-            zip_ref.writestr(file_name, json_string)
+            zip_ref.writestr(extracted_file_name, json_string)
             #write to s3
         output_object.seek(0)
         write_object_to_s3(output_object, S3_TARGET_BUCKET, key)
