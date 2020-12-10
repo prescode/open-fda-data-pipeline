@@ -3,6 +3,8 @@ import boto3
 import botocore
 import os
 import zipfile
+from io import BytesIO
+from io import StringIO
 from botocore.client import ClientError
 
 S3_TARGET_BUCKET = os.environ['s3_target_bucket']
@@ -21,44 +23,34 @@ def lambda_handler(event, context):
         bucket_name = record['s3']['bucket']['name']
         key = record['s3']['object']['key']
         print('s3 bucket: ' + bucket_name + '_ key: ' + key)
-        year = key.split('/')[-2]
         file_name = key.split('/')[-1]
-        object_name = year + '/' + file_name
-        temp_directory = '/tmp/'
-        zip_file_path = temp_directory + file_name
         #remove .zip for the new filename
-        extracted_file_path = os.path.splitext(zip_file_path)[0]
-        s3 = boto3.resource('s3')
-        s3.Bucket(bucket_name).download_file(key, zip_file_path)
-        #extract zip file
-        with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
-            zip_ref.extractall(temp_directory)
-        os.remove(zip_file_path)
-        #open file and load json
-        with open(extracted_file_path, 'r') as read_file:
-            data = json.load(read_file)
-        #transform data
+        extracted_file_name = os.path.splitext(file_name)[0]
+        s3 = boto3.client('s3')
+        s3_response_object = s3.get_object(Bucket=bucket_name, Key=key)
+        zip_object = BytesIO(s3_response_object['Body'].read())
+        #extract zip stream
+        with zipfile.ZipFile(zip_object) as zip_archive:
+            extracted_data = zip_archive.read(extracted_file_name)
         #extract results (remove metadata header)
+        data = json.loads(extracted_data)
         results = data['results']
-        #take first 10 results for testing
         transformed_data = map(filter_fields, results)
         list_transformed_data = list(transformed_data)
         json_string = json.dumps(list_transformed_data)
+        output_object = BytesIO()
         #zip transformed data
-        temp_zip_file_path = '/tmp/' + zip_file_path
-        with zipfile.ZipFile(temp_zip_file_path, 'w', compression=zipfile.ZIP_DEFLATED) as zip_ref:
-            zip_ref.writestr(extracted_file_path, json_string)
-        #write to s3
-        write_file_to_s3(temp_zip_file_path, S3_TARGET_BUCKET, object_name)
+        with zipfile.ZipFile(output_object, 'w', compression=zipfile.ZIP_DEFLATED) as zip_ref:
+            zip_ref.writestr(file_name, json_string)
+            #write to s3
+        output_object.seek(0)
+        write_object_to_s3(output_object, S3_TARGET_BUCKET, key)
 
-def write_file_to_s3(file_name, bucket, object_name = None):
-    # If S3 object_name was not specified, use file_name
-    if object_name is None:
-        object_name = file_name
-    # Upload the file
+def write_object_to_s3(obj, bucket, object_name):
+    # Upload the object
     s3_client = boto3.client('s3')
     try:
-        s3_client.upload_file(file_name, bucket, object_name)
+        s3_client.put_object(Body = obj, Bucket = bucket, Key = object_name)
     except ClientError as e:
         print(e)
         return False
