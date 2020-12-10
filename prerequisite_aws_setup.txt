@@ -1,9 +1,29 @@
 Create S3 buckets for url files, raw data, and cleaned data
 
-Create lambda with sufficient permissions for:
+Create lambdas:
 url-search
+Memory: 256MB
+Timeout: 20s
+environment variables:
+s3_target_bucket
+
 extract-data
-transform
+Memory: 256MB
+Timeout: 20s
+environment variables:
+s3_target_bucket
+trigger:
+S3:[url-search s3 target]:put objects
+
+transform lambda function
+Memory: 4000MB
+Timeout: 50s
+environment variables:
+missing_field_default_value
+s3_target_bucket
+trigger: 
+S3:[extract-data s3 target]:put objects
+
 load
 
 add environment variables to lambdas
@@ -14,7 +34,7 @@ upload deployment packages for each lambda
 
 update handler with name of python file
 
-update runtime and memory as needed (TODO: document settings)
+update runtime and memory as needed
 
 Example: https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
 
