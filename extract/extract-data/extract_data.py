@@ -34,6 +34,6 @@ def lambda_handler(event, context):
         year = year_q[:4]
         file_name =  url.split('/')[-1]
         new_file_path = year + "/" + q + '/' + file_name
-        print(new_file_path)
+        print('S3 key to write: ' + new_file_path)
         with urlopen(url) as zip_response:
             write_object_to_s3(BytesIO(zip_response.read()), S3_TARGET_BUCKET, new_file_path)
