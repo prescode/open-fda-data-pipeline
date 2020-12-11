@@ -38,3 +38,11 @@ update runtime and memory as needed
 
 Example: https://docs.aws.amazon.com/lambda/latest/dg/with-s3-example.html
 
+
+ElasticSearch setup
+
+Create domain
+
+Add domain(host) to load lambda
+
+After data pipeline is run (documents are indexed) then create index pattern in Kibana

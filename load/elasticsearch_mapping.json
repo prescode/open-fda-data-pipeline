@@ -1,4 +1,3 @@
-PUT /index1
 {
     "mappings": {
         "properties": {
@@ -24,7 +23,8 @@ PUT /index1
             "product_problems": {"type": "keyword"},
             "adverse_event_flag": {"type": "keyword"},
             "additional_manufacturer_narrative": {"type": "text"},
-            "description_of_event_or_problem": {"type": "text"}
+            "description_of_event_or_problem": {"type": "text"},
+            "manufacturer_evaluation_summary": {"type": "text"}
         }
     }
 }
