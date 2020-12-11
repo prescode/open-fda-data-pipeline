@@ -22,7 +22,7 @@ def lambda_handler(event, context):
     for record in event['Records']:
         bucket_name = record['s3']['bucket']['name']
         key = record['s3']['object']['key']
-        print('s3 bucket: ' + bucket_name + '_ key: ' + key)
+        print('s3 bucket: ' + bucket_name + ' key: ' + key)
         file_name = key.split('/')[-1]
         #remove .zip for the new filename
         extracted_file_name = os.path.splitext(file_name)[0]

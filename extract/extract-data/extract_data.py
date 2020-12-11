@@ -24,7 +24,7 @@ def lambda_handler(event, context):
     for record in event['Records']:
         bucket_name = record['s3']['bucket']['name']
         key = record['s3']['object']['key']
-        print('s3 bucket: ' + bucket_name + '_s3 key: ' + key)
+        print('s3 bucket: ' + bucket_name + ' s3 key: ' + key)
         s3 = boto3.client('s3')
         response = s3.get_object(Bucket=bucket_name, Key=key)
         body = response['Body'].read()
