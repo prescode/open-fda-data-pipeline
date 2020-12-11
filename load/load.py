@@ -1,9 +1,10 @@
 import json
 import os
 import uuid
+import boto3
 from elasticsearch import Elasticsearch, RequestsHttpConnection
 from requests_aws4auth import AWS4Auth 
-import boto3
+from elasticsearch.helpers import streaming_bulk
 
 #ES_INDEX_NAME = os.environ['index_name']
 ES_INDEX_NAME = 'test-index'
@@ -28,11 +29,17 @@ def lambda_handler(event, context):
     #create index with mappings
     mappings = json.load(open('elasticsearch_mapping.json'))
     es.indices.create(index=ES_INDEX_NAME, body=mappings, ignore=400)
+    successes = 0
+    for ok, action in streaming_bulk(
+        client = es, index=ES_INDEX_NAME, actions=generate_docs(),
+    ):
+        successes += ok
+    print("Indexed %d documents" % (successes))
+
+def generate_docs():
     data = json.load(open('sample_data.json'))
-    singledoc = data[0]
-    es.create(index=ES_INDEX_NAME, id=uuid.uuid1(), body = singledoc)
-
-
+    for d in data:
+        yield d
 
 
 
