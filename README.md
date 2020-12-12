@@ -4,7 +4,7 @@
 > Enabling advanced analytics of openFDA data in AWS
 
 This data pipeline leverages the power of AWS to:
-* Automate the extraction data in bulk from the openFDA (really fast!)
+* Automate the extraction of bulk data from the openFDA website
 * Loads the raw data into an S3 data lake
 * Transforms the date with custom options for filtered fields and enrichment with NLP models to a curated (cleaned) S3 bucket
 * Loads the data into Elasticsearch for advanced full text search and visualizations
@@ -16,11 +16,11 @@ An architecture overview:
 
 ## Getting started
 
-The plan is to make the build automated using a CloudFormation or serverless template.  The current setup is a little manual.  See [building](#Building) for instructions.
+The plan is to make the entire build automated using a CloudFormation or serverless template.  The current setup is a little manual.  See [building](#Building) for instructions.
 
 ### Initial Configuration
 
-This project uses Python 3.8.  Testing the functions locally is possible using the AWS CLI.
+This project uses Python 3.8.  Testing the functions locally is possible using the AWS CLI (https://docs.aws.amazon.com/cli/).
 
 ## Developing
 
@@ -47,11 +47,6 @@ Use pip to install the function's current dependencies into the virtual environm
 ```shell
 pip install -r ./requirements.txt -t
 ```
-Add new dependencies to the requirements file (after installing them into your virtual environment using `pip install`)
-
-```shell
-pip freeze > requirements.txt
-```
 
 Activate your virtual environment:
 
@@ -64,7 +59,13 @@ Start the Python shell:
 python
 ```
 
-Then test your code changes by pasting function definitions, variable assignments, and other code into the python shell.  Test events can be created using the json files to simulate S3 put events.
+Then test your code changes by entering function definitions, variable assignments, and other code into the python shell.  Test events can be created using the json files to simulate S3 put events.
+
+Add new dependencies to the requirements file (after installing them into your virtual environment using `pip install`)
+
+```shell
+pip freeze > requirements.txt
+```
 
 After making (and testing) your code changes close the python shell and deactivate the virtual environment:
 
@@ -88,9 +89,20 @@ The shell script will create a virtual python environment, install all the neces
 
 ### Deploying / Publishing
 
-1. Create Lambda function via CLI or console
-2. Upload `package.zip`
-3. Update 
+1. Create S3 buckets for:
+   1. urls
+   2. raw data
+   3. clean data
+2. For each function 
+   1. Create Lambda functions via CLI or console
+   2. Create Lambda IAM role with permissions to write to S3 bucket (and Elasticsearch for "load" function)
+   3. Upload `package.zip` from build folder
+   4. Update handler name to match name of python file (e.g. `load.lambda_handler`)
+   5. Add environment variables defined in the python file
+   6. Set environment variables
+   7. Update basic settings: memory and timeout
+   8. Add trigger as S3 put from configured S3 bucket (except for url-search)
+3. Create empty test event in url-search lambda and trigger it manually using the "Test" button
 
 ## Features
 
@@ -107,7 +119,7 @@ using the project.
 ## Contributing
 
 If you'd like to contribute, please fork the repository and use a feature
-branch. Pull requests are warmly welcome.
+branch. Pull requests are much appreciated.
 
 ## Links
 
