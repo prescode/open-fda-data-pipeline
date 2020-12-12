@@ -104,7 +104,7 @@ The shell script will create a virtual python environment, install all the neces
 
 ### Deploying / Publishing
 
-See ![AWS Setup](./prerequisite_aws_setup.txt) for more details.
+See [AWS Setup](./prerequisite_aws_setup.txt) for more details.
 
 1. Create S3 buckets for:
    1. urls
