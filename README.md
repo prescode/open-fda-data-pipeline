@@ -12,7 +12,7 @@ This data pipeline leverages the power of AWS to:
 
 An architecture overview:
 
-![Architecture diagram](./docs/architecture_diagram.drawio)
+![Architecture diagram](./docs/architecture_diagram.svg)
 
 ## Getting started
 
