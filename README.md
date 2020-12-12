@@ -6,7 +6,7 @@
 This data pipeline leverages the power of AWS to:
 * Automate the extraction of bulk data from the openFDA website
 * Loads the raw data into an S3 data lake
-* Transforms the date with custom options for filtered fields and enrichment with NLP models to a curated (cleaned) S3 bucket
+* Transforms the date with custom options for filtered fields and enrichment with NLP models to a curated (clean) S3 bucket
 * Loads the data into Elasticsearch for advanced full text search and visualizations
 * Enables other analytics to be executed on the data using AWS Glue, EMR, or other AWS analytics
 
@@ -106,13 +106,13 @@ The shell script will create a virtual python environment, install all the neces
 
 ## Features
 
-* 
-* You can also do another thing
-* If you get really randy, you can even do this
+* Clean and transform FDA dataset specifically for your use case
+* Use the power of AWS Analytics to gain insights on the FDA datasets
+* Join FDA data with other datasets for advanced analytics
 
 ## Configuration
 
-Filtered data fields can be configured in the "transform" function's list of filtered fields variable (Elasticsearch index mapping may also have to be changed).
+Filtered data fields can be configured in the "transform" function's list of filtered fields variable (Elasticsearch index mapping may also need to be changed).
 
 ## Contributing
 
@@ -127,6 +127,7 @@ branch. Pull requests are much appreciated.
 - AWS Elasticsearch: https://aws.amazon.com/elasticsearch-service/
 - Related projects:
   - openFDA: https://github.com/FDA/openfda/
+- Diagram authoring: https://draw.io
 
 ## Licensing
 
