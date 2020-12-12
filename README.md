@@ -12,7 +12,7 @@ This data pipeline leverages the power of AWS to:
 
 An architecture overview:
 
-![Architecture diagram](./docs/architecture_diagram.png)
+![Architecture diagram](./docs/architecture_diagram.svg)
 
 ## Getting started
 
@@ -59,7 +59,7 @@ Start the Python shell:
 python
 ```
 
-Then test your code changes by entering function definitions, variable assignments, and other code into the python shell.  Test events can be created using the json files to simulate S3 put events.
+Then test your code changes by entering function definitions, variable assignments, and other code into the python shell.  Test events can be created using the included json files to simulate S3 put events.
 
 Add new dependencies to the requirements file (after installing them into your virtual environment using `pip install`)
 
@@ -106,15 +106,13 @@ The shell script will create a virtual python environment, install all the neces
 
 ## Features
 
-What's all the bells and whistles this project can perform?
-* What's the main functionality
+* 
 * You can also do another thing
 * If you get really randy, you can even do this
 
 ## Configuration
 
-Here you should write what are all of the configurations a user can enter when
-using the project.
+Filtered data fields can be configured in the "transform" function's list of filtered fields variable (Elasticsearch index mapping may also have to be changed).
 
 ## Contributing
 
