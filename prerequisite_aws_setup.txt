@@ -16,7 +16,7 @@ trigger:
 S3:[url-search s3 target]:put objects
 
 transform lambda function
-Memory: 4000MB
+Memory: 3000MB
 Timeout: 50s
 environment variables:
 missing_field_default_value
@@ -25,6 +25,14 @@ trigger:
 S3:[extract-data s3 target]:put objects
 
 load
+Memory: 1000MB
+Timeout: 20s
+environment variables:
+host
+host_region
+index_name
+trigger: 
+S3:[transform s3 target]:put objects
 
 add environment variables to lambdas
 
@@ -43,6 +51,6 @@ ElasticSearch setup
 
 Create domain
 
-Add domain(host) to load lambda
+Add domain(host) to "load" lambda
 
 After data pipeline is run (documents are indexed) then create index pattern in Kibana
