@@ -16,7 +16,7 @@ An architecture overview:
 
 ## Getting started
 
-The plan is to make the build automated using a CloudFormation template or serverless.  The current setup is a little more manual.  See [building](#Building) for instructions.
+The plan is to make the build automated using a CloudFormation or serverless template.  The current setup is a little manual.  See [building](#Building) for instructions.
 
 ### Initial Configuration
 
@@ -27,7 +27,7 @@ This project uses Python 3.8.  Testing the functions locally is possible using t
 Clone the repository:
 
 ```shell
-git clone https://https://github.com/prescode/open-fda-data-pipeline.git
+git clone https://github.com/prescode/open-fda-data-pipeline.git
 ```
 
 Navigate to the function you want to change:
@@ -64,7 +64,7 @@ Start the Python shell:
 python
 ```
 
-Then test your code changes by pasting function definitions, variable assignments into the python shell.  Test events can be created using the json files to simulate S3 put events.
+Then test your code changes by pasting function definitions, variable assignments, and other code into the python shell.  Test events can be created using the json files to simulate S3 put events.
 
 After making (and testing) your code changes close the python shell and deactivate the virtual environment:
 
@@ -84,11 +84,11 @@ Each function is built separately.  A `setup.sh` file is included in each folder
 ```shell
 ./setup.sh
 ```
-The shell script will create a virtual python environment, install all the necessary dependencies, then package the dependencies along with the function python file and create a package.zip file ready to be deployed to AWS Lambda.  The virtual environment and setup directory will be cleaned up after the process is complete.
+The shell script will create a virtual python environment, install all the necessary dependencies, then package the dependencies along with the function python file and create a `package.zip` file ready to be deployed to AWS Lambda.  The virtual environment and setup directory will be cleaned up after the process is complete.
 
 ### Deploying / Publishing
 
-1. Create Lambda function
+1. Create Lambda function via CLI or console
 2. Upload `package.zip`
 3. Update 
 
@@ -104,57 +104,20 @@ What's all the bells and whistles this project can perform?
 Here you should write what are all of the configurations a user can enter when
 using the project.
 
-#### Argument 1
-Type: `String`  
-Default: `'default value'`
-
-State what an argument does and how you can use it. If needed, you can provide
-an example below.
-
-Example:
-```bash
-awesome-project "Some other value"  # Prints "You're nailing this readme!"
-```
-
-#### Argument 2
-Type: `Number|Boolean`  
-Default: 100
-
-Copy-paste as many of these as you need.
-
 ## Contributing
 
-When you publish something open source, one of the greatest motivations is that
-anyone can just jump in and start contributing to your project.
-
-These paragraphs are meant to welcome those kind souls to feel that they are
-needed. You should state something like:
-
-"If you'd like to contribute, please fork the repository and use a feature
-branch. Pull requests are warmly welcome."
-
-If there's anything else the developer needs to know (e.g. the code style
-guide), you should link it here. If there's a lot of things to take into
-consideration, it is common to separate this section to its own file called
-`CONTRIBUTING.md` (or similar). If so, you should say that it exists here.
+If you'd like to contribute, please fork the repository and use a feature
+branch. Pull requests are warmly welcome.
 
 ## Links
 
-Even though this information can be found inside the project on machine-readable
-format like in a .json file, it's good to include a summary of most useful
-links to humans using your project. You can include links like:
-
-- Project homepage: https://your.github.com/awesome-project/
-- Repository: https://github.com/your/awesome-project/
-- Issue tracker: https://github.com/your/awesome-project/issues
-  - In case of sensitive bugs like security vulnerabilities, please contact
-    my@email.com directly instead of using issue tracker. We value your effort
-    to improve the security and privacy of this project!
+- Repository: https://github.com/prescode/open-fda-data-pipeline/
+- Issue tracker: https://github.com/prescode/open-fda-data-pipeline/issues
+- openFDA website: https://open.fda.gov/
+- AWS Elasticsearch: https://aws.amazon.com/elasticsearch-service/
 - Related projects:
-  - Your other project: https://github.com/your/other-project/
-  - Someone else's project: https://github.com/someones/awesome-project/
-
+  - openFDA: https://github.com/FDA/openfda/
 
 ## Licensing
 
-"The code in this project is licensed under MIT license."
+&copy; Dean Johnson - The code in this project is licensed under MIT license.
