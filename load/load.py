@@ -10,7 +10,7 @@ from elasticsearch.helpers import streaming_bulk
 ES_INDEX_NAME = os.environ['index_name']
 #ES_INDEX_NAME = 'test-index'
 ES_HOST = os.environ['host']
-#ES_HOST = 'vpc-fda-data-c2lwohh63nlfnhb4csbexcxt5a.us-east-1.es.amazonaws.com' # For example, my-test-domain.us-east-1.es.amazonaws.com
+#ES_HOST = # For example, my-test-domain.us-east-1.es.amazonaws.com
 ES_REGION = os.environ['host_region']
 #ES_REGION= 'us-east-1'
 
