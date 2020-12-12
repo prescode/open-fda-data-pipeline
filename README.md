@@ -89,11 +89,14 @@ The shell script will create a virtual python environment, install all the neces
 
 ### Deploying / Publishing
 
+See ./prerequisite_aws_setup.txt for more details.
+
 1. Create S3 buckets for:
    1. urls
    2. raw data
    3. clean data
-2. For each function 
+2. Create Elasticsearch domain
+3. For each function 
    1. Create Lambda functions via CLI or console
    2. Create Lambda IAM role with permissions to write to S3 bucket (and Elasticsearch for "load" function)
    3. Upload `package.zip` from build folder
@@ -102,7 +105,7 @@ The shell script will create a virtual python environment, install all the neces
    6. Set environment variables
    7. Update basic settings: memory and timeout
    8. Add trigger as S3 put from configured S3 bucket (except for url-search)
-3. Create empty test event in url-search lambda and trigger it manually using the "Test" button
+4. Create empty test event in url-search lambda and trigger it manually using the "Test" button
 
 ## Features
 
