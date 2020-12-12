@@ -47,15 +47,35 @@ Use pip to install the function's current dependencies into the virtual environm
 ```shell
 pip install -r ./requirements.txt -t
 ```
-To add new dependencies to the requirements file (after installing them into your local environment using `pip install`)
-
-
+Add new dependencies to the requirements file (after installing them into your virtual environment using `pip install`)
 
 ```shell
 pip freeze > requirements.txt
 ```
 
-After making (and testing) your code changes
+Activate your virtual environment:
+
+```shell
+source .venv/bin/activate
+```
+
+Start the Python shell:
+```shell
+python
+```
+
+Then test your code changes by pasting function definitions, variable assignments into the python shell.  Test events can be created using the json files to simulate S3 put events.
+
+After making (and testing) your code changes close the python shell and deactivate the virtual environment:
+
+```shell
+deactivate
+```
+
+Remove your virtual environment (a build script will be used to create a new one for deployment):
+```shell
+rm -r .venv
+```
 
 ### Building
 
