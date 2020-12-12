@@ -43,7 +43,7 @@ def lambda_handler(event, context):
         #extract results (remove metadata header)
         data = json.loads(extracted_data)
         #create index with mappings
-        mappings = json.load(open('elasticsearch_mapping.json'))
+        mappings = get_mapping()
         #try create each time (will fail if already exists but be ignored)
         es.indices.create(index=ES_INDEX_NAME, body=mappings, ignore=400)
         successes = 0
@@ -52,6 +52,41 @@ def lambda_handler(event, context):
         ):
             successes += ok
         print("Indexed %d documents" % (successes))
+
+#this should be moved to a file in an s3 bucket
+def get_mapping():
+    mapping = {
+        "mappings": {
+            "properties": {
+                "product_problem_flag": {"type": "keyword"},
+                "date_received": {"type": "date", "format":"yyyyMMdd"},
+                "source_type": {"type": "keyword"},
+                "event_location": {"type": "keyword"},
+                "type_of_report": {"type": "keyword"},
+                "device": {"type": "nested",
+                "properties": {
+                    "manufacturer_d_zip_code": {"type": "keyword"},
+                    "lot_number": {"type": "keyword"},
+                    "model_number": {"type": "keyword"},
+                    "generic_name" : {"type": "text"},
+                    "device_operator": {"type": "text"},
+                    "manufacturer_d_name": {"type": "text"},
+                    "device_name": {"type": "text"},
+                    "medical_specialty_description": {"type": "text"},
+                    "device_class": {"type": "keyword"},
+                    "regulation_number": {"type": "keyword"},
+                    "catelog_number": {"type": "keyword"}
+                }},
+                "product_problems": {"type": "keyword"},
+                "adverse_event_flag": {"type": "keyword"},
+                "additional_manufacturer_narrative": {"type": "text"},
+                "description_of_event_or_problem": {"type": "text"},
+                "manufacturer_evaluation_summary": {"type": "text"}
+            }
+        }
+    }
+    return json.dumps(mapping)
+
 
 def generate_docs(data):
     for d in data:
