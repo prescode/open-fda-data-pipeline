@@ -10,6 +10,21 @@ This data pipeline leverages the power of AWS to:
 * Loads the data into Elasticsearch for advanced full text search and visualizations
 * Enables other analytics to be executed on the data using AWS Glue, EMR, or other AWS analytics
 
+- [openFDA AWS data pipeline](#openfda-aws-data-pipeline)
+  - [Architecture diagram](#architecture-diagram)
+  - [Getting started](#getting-started)
+    - [Initial Configuration](#initial-configuration)
+  - [Developing](#developing)
+    - [Building](#building)
+    - [Deploying / Publishing](#deploying--publishing)
+  - [Features](#features)
+  - [Configuration](#configuration)
+  - [Contributing](#contributing)
+  - [Links](#links)
+  - [Licensing](#licensing)
+
+## Architecture diagram
+
 An architecture overview:
 
 ![Architecture diagram](./docs/architecture_diagram.svg)
