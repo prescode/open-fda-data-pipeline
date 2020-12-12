@@ -3,68 +3,46 @@
 # openFDA AWS data pipeline
 > Enabling advanced analytics of openFDA data in AWS
 
-This data pipeline:
-* Automates the extraction data in bulk from the openFDA
-* Puts the raw data into an S3 data lake
-* Transforms the date with custom options on filtered fields and enrichment with NLP models to a curated (cleaned) S3 bucket
+This data pipeline leverages the power of AWS to:
+* Automate the extraction data in bulk from the openFDA (really fast!)
+* Loads the raw data into an S3 data lake
+* Transforms the date with custom options for filtered fields and enrichment with NLP models to a curated (cleaned) S3 bucket
 * Loads the data into Elasticsearch for advanced full text search and visualizations
-* Enables other analtyics using AWS Glue or other services
+* Enables other analytics to be executed on the data using AWS Glue, EMR, or other AWS analytics
+
+An architecture overview:
 
 ![Architecture diagram](./docs/architecture_diagram.png)
 
-## Installing / Getting started
+## Getting started
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
-
-```shell
-packagemanager install awesome-project
-awesome-project start
-awesome-project "Do something!"  # prints "Nah."
-```
-
-Here you should say what actually happens when you execute the code above.
+The plan is to make the build automated using a CloudFormation template or serverless.  The current setup is a little more manual.  See [building](#Building) for instructions.
 
 ### Initial Configuration
 
-Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
-This is the section where you would document those requirements.
+This project uses Python 3.8.  Testing the functions locally is possible using the AWS CLI.
 
 ## Developing
 
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
+Clone the repository:
 
 ```shell
-git clone https://github.com/your/awesome-project.git
-cd awesome-project/
-packagemanager install
+git clone https://https://github.com/prescode/open-fda-data-pipeline.git
 ```
-
-And state what happens step-by-step.
 
 ### Building
 
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here:
+Each function is built separately.  A `setup.sh` file is included in each folder.
 
 ```shell
-./configure
-make
-make install
+./setup.sh
 ```
-
-Here again you should state what actually happens when the code above gets
-executed.
+The shell script will create a virtual python environment, install all the necessary dependencies, then package the dependencies along with the function python file and create a package.zip file ready to be deployed to AWS Lambda.  The virtual environment and setup directory will be cleaned up after the process is complete.
 
 ### Deploying / Publishing
 
 In case there's some step you have to take that publishes this project to a
 server, this is the right time to state it.
-
-```shell
-packagemanager deploy awesome-project -s server.com -u username -p password
-```
 
 And again you'd need to tell what the previous code actually does.
 
