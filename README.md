@@ -30,6 +30,33 @@ Clone the repository:
 git clone https://https://github.com/prescode/open-fda-data-pipeline.git
 ```
 
+Navigate to the function you want to change:
+
+```shell
+cd transform
+```
+
+Create a new virtual Python environment:
+
+```shell
+python3 -m venv .venv
+```
+
+Use pip to install the function's current dependencies into the virtual environment:
+
+```shell
+pip install -r ./requirements.txt -t
+```
+To add new dependencies to the requirements file (after installing them into your local environment using `pip install`)
+
+
+
+```shell
+pip freeze > requirements.txt
+```
+
+After making (and testing) your code changes
+
 ### Building
 
 Each function is built separately.  A `setup.sh` file is included in each folder.
@@ -41,10 +68,9 @@ The shell script will create a virtual python environment, install all the neces
 
 ### Deploying / Publishing
 
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
-
-And again you'd need to tell what the previous code actually does.
+1. Create Lambda function
+2. Upload `package.zip`
+3. Update 
 
 ## Features
 
