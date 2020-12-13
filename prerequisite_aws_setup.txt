@@ -19,7 +19,6 @@ transform lambda function
 Memory: 3000MB
 Timeout: 50s
 environment variables:
-missing_field_default_value
 s3_target_bucket
 trigger: 
 S3:[extract-data s3 target]:put objects
