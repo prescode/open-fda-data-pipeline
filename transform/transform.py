@@ -1,7 +1,6 @@
 import json
 import os
 import zipfile
-from collections import MutableMapping
 from io import BytesIO, StringIO
 
 import boto3
@@ -81,7 +80,6 @@ def flatten_device(dic):
                 dic['device'][0].update({key: dic['device'][0]['openfda'][key]})
         del dic['device'][0]['openfda']
     #then filter all unwanted fields (will remove the openfda field as well)
-    print(dic['device'][0])
     for key in dic['device'][0]:
         if key in (device_fields + openfda_device_fields):
             dic.update({key: dic['device'][0][key]})
