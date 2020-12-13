@@ -1,39 +1,40 @@
 import json
 import os
-from datetime import date, timedelta
 import urllib
+from datetime import date, timedelta
+
 import boto3
 from botocore.client import ClientError
 
 SITE = os.environ['site']
 #test set
-#SITE = https://download.open.fda.gov/device/event/
+#SITE = 'https://download.open.fda.gov/device/event/'
 START_YEAR = os.environ['start_year']
 #test set
-#START_YEAR = 2019
+#START_YEAR = '2019'
 TARGET_S3_BUCKET = os.environ['target_s3_bucket']
 #test set
-#TARGET_S3_BUCKET = fda-data-extract-urls
+#TARGET_S3_BUCKET = 'fda-data-extract-urls'
 
-def write_file_to_s3(file_name, bucket, object_name = None):
-    # If S3 object_name was not specified, use file_name
-    if object_name is None:
-        object_name = file_name
-    # Upload the file
-    s3_client = boto3.client('s3')
-    try:
-        s3_client.upload_file(file_name, bucket, object_name)
-    except ClientError as e:
-        print(e)
-        return False
-    return True
+def lambda_handler(event, context):
+    i = 0
+    #environment variables are strings
+    start_year_int = int(START_YEAR)
+    if (start_year_int < 1992):
+        print('Error: start year must not be before 1992, entered: ' + START_YEAR)
+        return
+    for url in search_url(SITE, start_year_int):
+        i += 1
+        file_name = "url_" + str(i) + ".json"
+        json_string = json.dumps({'url': url})
+        write_object_to_s3(json_string, TARGET_S3_BUCKET, file_name)
 
 def search_url(base_url, start_year, end_year = date.today().year):
-    #start year must be on or after 1992
     start_year = date(start_year, 6, 1)
     print("Start Year: " + str(start_year.year))
     end_year = date(end_year, 6, 1)
     print("End Year: " + str(end_year.year))
+    #assumption: there will never be more than 9 files per year
     ofSearchLimit=10
     complete = False
     q = 1
@@ -82,7 +83,6 @@ def search_url(base_url, start_year, end_year = date.today().year):
             of = 1
             continue
         else:
-            #assumption: there will never be more than 9 files per year
             if(of < ofSearchLimit):
                 of += 1
             else:
@@ -90,14 +90,12 @@ def search_url(base_url, start_year, end_year = date.today().year):
                 complete = True
                 print("Stopping search after " + str(ofSearchLimit) + "iterations")
 
-
-def lambda_handler(event, context):
-    i = 0
-    #environment variables are always strings
-    start_year_int = int(START_YEAR)
-    for url in search_url(SITE, start_year_int):
-        i += 1
-        file_name = "url_" + str(i) + ".json"
-        with open('/tmp/' + file_name, 'w') as outfile:
-            json.dump({'url': url}, outfile)
-        write_file_to_s3(outfile.name, TARGET_S3_BUCKET, file_name)
+def write_object_to_s3(obj, bucket, object_name):
+    # Upload the object
+    s3_client = boto3.client('s3')
+    try:
+        s3_client.put_object(Body = obj, Bucket = bucket, Key = object_name)
+    except ClientError as e:
+        print(e)
+        return False
+    return True
