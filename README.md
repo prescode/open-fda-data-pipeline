@@ -74,7 +74,12 @@ Start the Python shell:
 python
 ```
 
-Then test your code changes by entering function definitions, variable assignments, and other code into the python shell.  Test events can be created using the included json files to simulate S3 put events.
+Then test your code changes by entering function definitions, variable assignments, and other code into the python shell.  Test events can be created using the included json files to simulate S3 put events:
+
+```shell
+test_event = json.load(open('test_event.json'))
+lambda_handler(test_event, '')
+```
 
 Add new dependencies to the requirements file (after installing them into your virtual environment using `pip install`)
 
