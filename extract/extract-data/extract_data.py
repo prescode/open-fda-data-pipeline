@@ -49,6 +49,7 @@ def write_object_to_s3(obj, bucket, object_name):
     # Upload the object
     s3_client = boto3.client('s3')
     try:
+        print('Uploading ' + object_name + ' to ' + bucket)
         s3_client.put_object(Body = obj, Bucket = bucket, Key = object_name)
     except ClientError as e:
         print(e)
