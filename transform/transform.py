@@ -13,7 +13,7 @@ S3_TARGET_BUCKET = os.environ['s3_target_bucket']
 
 main_fields=['product_problem_flag', 'date_received', 'source_type', 'event_location', 'type_of_report', 'device', 'product_problems', 'adverse_event_flag', 'mdr_text']
 device_fields=['manufacturer_d_zip_code','lot_number', 'model_number', 'generic_name', 'device_operator', 'manufacturer_d_name', 'catalog_number']
-openfda_device_fields=['device_name' 'medical_specialty_description', 'device_class', 'regulation_number']
+openfda_device_fields=['device_name', 'medical_specialty_description', 'device_class', 'regulation_number']
 
 def lambda_handler(event, context):
     for record in event['Records']:
@@ -72,17 +72,17 @@ def transform_mdr(mdr):
     return (pythonized_string, mdr['text'])
 
 def flatten_device(dic):
-    if ('openfda' in dic['device'][0]):
-        #filter and
-        #flatten by pulling the openfda fields one level up
-        for key in dic['device'][0]['openfda']:
-            if key in openfda_device_fields:
-                dic['device'][0].update({key: dic['device'][0]['openfda'][key]})
-        del dic['device'][0]['openfda']
-    #then filter all unwanted fields (will remove the openfda field as well)
-    for key in dic['device'][0]:
-        if key in (device_fields + openfda_device_fields):
-            dic.update({key: dic['device'][0][key]})
+    for i, device in enumerate(dic['device']):
+        if ('openfda' in device):
+            #filter and flatten by pulling the openfda fields one level up
+            for key in device['openfda']:
+                if key in openfda_device_fields:
+                    device.update({key: device['openfda'][key]})
+            del device['openfda']
+        #then filter all unwanted fields (will remove the openfda field as well)
+        for key in device:
+            if key in (device_fields + openfda_device_fields):
+                dic.update({'device' + str(i + 1) + '_' + key: device[key]}) #add a index after each device
     del dic['device']
 
 def flatten_mdr(dic):
@@ -90,10 +90,10 @@ def flatten_mdr(dic):
 
 def filter_fields(dic):
     main_filtered = {key: dic[key] if key in dic else '' for key in main_fields}
-    if (len(main_filtered['device']) == 1):
+    if (len(main_filtered['device']) >= 1):
         flatten_device(main_filtered)
     else:
-        print('Warning: potential loss of data. Only a single device will be included')
+        print('Warning: no device found')
     if ('mdr_text' in dic):
         if (dic['mdr_text']):
             main_filtered.update(list(flatten_mdr(main_filtered)))
