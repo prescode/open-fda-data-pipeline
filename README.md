@@ -57,16 +57,16 @@ Create a new virtual Python environment:
 python3 -m venv .venv
 ```
 
-Use pip to install the function's current dependencies into the virtual environment:
-
-```shell
-pip install -r ./requirements.txt
-```
-
 Activate your virtual environment:
 
 ```shell
 source .venv/bin/activate
+```
+
+Use pip to install the function's current dependencies into the virtual environment:
+
+```shell
+pip install -r ./requirements.txt
 ```
 
 Start the Python shell:
